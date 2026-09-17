@@ -1,64 +1,77 @@
-# Nuxt Starter Template
+# Homepage v3
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+[![Vite+](https://img.shields.io/badge/toolchain-Vite%2B-8B5CF6)](https://viteplus.dev/guide/)
+[![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?logo=nuxt.js&logoColor=white)](https://nuxt.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+Personal homepage, built with Nuxt, Nuxt UI, TypeScript, and Tailwind CSS.
+The repository uses [Vite+](https://viteplus.dev/guide/) and its `vp` CLI as the entry point for dependency management and development tasks.
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+## Prerequisites
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
-
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
-
-## Quick Start
-
-```bash [Terminal]
-npm create nuxt@latest -- -t ui
-```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
-
-## Setup
-
-Make sure to install the dependencies:
+Install the global Vite+ CLI on macOS or Linux:
 
 ```bash
-pnpm install
+curl -fsSL https://vite.plus | bash
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+For Windows and alternative installation options, see the [Vite+ installation guide](https://viteplus.dev/guide/#install-vp-globally). Open a new terminal after installation and confirm that the CLI is available:
 
 ```bash
-pnpm dev
+vp --version
 ```
+
+Vite+ can manage the required Node.js runtime and package manager. This project currently resolves to pnpm from the `packageManager` field in `package.json`.
+
+## Getting started
+
+Install dependencies:
+
+```bash
+vp install
+```
+
+Start the Nuxt development server at `http://localhost:3000`:
+
+```bash
+vp run dev
+```
+
+## Commands
+
+| Command            | Purpose                                                               |
+| ------------------ | --------------------------------------------------------------------- |
+| `vp install`       | Install dependencies with the package manager declared by the project |
+| `vp run dev`       | Start the Nuxt development server with hot module replacement         |
+| `vp run build`     | Create a production build                                             |
+| `vp run preview`   | Preview the production build locally                                  |
+| `vp run lint`      | Run the project ESLint configuration                                  |
+| `vp run typecheck` | Run Nuxt's TypeScript checks                                          |
+| `vp toolchain`     | Display the active Vite+ toolchain and versions                       |
+| `vp help`          | List all Vite+ commands                                               |
+
+### Vite+ built-ins and project scripts
+
+Vite+ built-in commands and `package.json` scripts use different syntax. This is a Nuxt application, so use `vp run <name>` for its framework scripts:
+
+- `vp run dev` runs the `nuxt dev` script from `package.json`.
+- `vp run build` runs the `nuxt build` script from `package.json`.
+- `vp dev` and `vp build` invoke Vite+'s built-in Vite commands instead.
+
+Use `vp run` without a task name to open the interactive task selector. See the [Vite+ task runner documentation](https://viteplus.dev/guide/run) for filtering, caching, and workspace options.
 
 ## Production
 
-Build the application for production:
+Create and preview a production build:
 
 ```bash
-pnpm build
+vp run build
+vp run preview
 ```
 
-Locally preview production build:
+The generated Nuxt output is written to `.output/`. Refer to the [Nuxt deployment guide](https://nuxt.com/docs/getting-started/deployment) for provider-specific instructions.
 
-```bash
-pnpm preview
-```
+## License
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+Released under the [MIT License](./LICENSE).
