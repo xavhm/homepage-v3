@@ -1,0 +1,4 @@
+# .codex/config.toml
+
+[mcp_servers.nuxt]
+url = "https://nuxt.com/mcp"
