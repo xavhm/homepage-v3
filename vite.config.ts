@@ -1,13 +1,19 @@
 import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
-  lint: {
-    ignorePatterns: ['.agents/**', '.codex/**', '.nuxt/**'],
-    options: {
-      typeAware: true,
-      typeCheck: true,
-    },
-    plugins: ['vue', 'vitest'],
+  test: {
+    projects: [
+      {
+        test: {
+          name: 'nuxt',
+          include: ['./app/tests/**/*.{test,spec}.ts'],
+          environment: 'nuxt',
+        },
+      },
+    ],
+  },
+  staged: {
+    '*.{js,ts,tsx,vue}': 'vp check --fix',
   },
   fmt: {
     ignorePatterns: [
@@ -22,21 +28,22 @@ export default defineConfig({
     ],
     singleQuote: true,
     semi: false,
+    sortPackageJson: true,
+    sortImports: true,
+    sortTailwindcss: true,
   },
-  staged: {
-    '*.{js,mjs,ts,vue}': 'vp lint',
-    '*.{js,mjs,ts,vue,css,json,md,yaml,yml}': 'vp fmt --check',
-  },
-  test: {
-    projects: [
-      {
-        test: {
-          name: 'unit',
-          include: ['test/unit/**/*.{test,spec}.ts'],
-          environment: 'happy-dom',
-        },
-      },
-      './test/nuxt/vitest.config.ts',
-    ],
+  lint: {
+    plugins: ['vue', 'eslint', 'vitest', 'typescript', 'oxc', 'node'],
+    jsPlugins: [{ name: 'vite-plus', specifier: 'vite-plus/oxlint-plugin' }],
+    rules: {
+      'vite-plus/prefer-vite-plus-imports': 'error',
+      'no-debugger': 'error',
+      'no-console': 'error',
+    },
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
+    ignorePatterns: ['dist/**', '.agents/**', '.codex/**', '.nuxt/**', '.data/**', '.github/**'],
   },
 })
