@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/hints',
     '@nuxtjs/seo',
@@ -12,6 +11,11 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  ogImage: {
+    enabled: false,
+    zeroRuntime: true
+  },
+
   css: ['~/assets/css/main.css'],
 
   routeRules: {
@@ -19,15 +23,6 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2026-06-30',
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
 
   security: {}
 })
