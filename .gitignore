@@ -8,6 +8,7 @@ dist
 
 # Node dependencies
 node_modules
+.vite-hooks/_
 
 # Logs
 logs

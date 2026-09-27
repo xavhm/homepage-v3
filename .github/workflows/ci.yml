@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [22]
+        node: [24]
 
     steps:
       - name: Checkout
@@ -28,7 +28,13 @@ jobs:
         run: pnpm install
 
       - name: Lint
-        run: pnpm run lint
+        run: pnpm exec vp check
+
+      - name: Test
+        run: pnpm exec vp test
 
       - name: Typecheck
         run: pnpm run typecheck
+
+      - name: Build
+        run: pnpm exec vp run build

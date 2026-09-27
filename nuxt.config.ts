@@ -1,28 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/ui',
-    '@nuxt/hints',
-    '@nuxtjs/seo',
-    'nuxt-security'
-  ],
+  modules: ['@nuxt/ui', '@nuxt/hints', '@nuxtjs/seo', 'nuxt-security'],
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
 
   ogImage: {
     enabled: false,
-    zeroRuntime: true
+    zeroRuntime: true,
   },
 
   css: ['~/assets/css/main.css'],
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
   },
 
   compatibilityDate: '2026-06-30',
 
-  security: {}
+  security: {},
 })

@@ -46,7 +46,10 @@ vp run dev
 | `vp run dev`       | Start the Nuxt development server with hot module replacement         |
 | `vp run build`     | Create a production build                                             |
 | `vp run preview`   | Preview the production build locally                                  |
-| `vp run lint`      | Run the project ESLint configuration                                  |
+| `vp check`         | Check formatting, lint rules, and types with Oxfmt and Oxlint        |
+| `vp fmt`           | Format project files with Oxfmt                                       |
+| `vp lint`          | Lint project files with Oxlint                                        |
+| `vp test`          | Run Vitest unit and Nuxt environment tests                            |
 | `vp run typecheck` | Run Nuxt's TypeScript checks                                          |
 | `vp toolchain`     | Display the active Vite+ toolchain and versions                       |
 | `vp help`          | List all Vite+ commands                                               |
@@ -60,6 +63,12 @@ Vite+ built-in commands and `package.json` scripts use different syntax. This is
 - `vp dev` and `vp build` invoke Vite+'s built-in Vite commands instead.
 
 Use `vp run` without a task name to open the interactive task selector. See the [Vite+ task runner documentation](https://viteplus.dev/guide/run) for filtering, caching, and workspace options.
+
+## Checks and tests
+
+`vite.config.ts` configures Oxlint, Oxfmt, and Vitest. Unit tests in `test/unit/` use Happy DOM and Vue Test Utils. Tests in `test/nuxt/` use Nuxt Test Utils with Happy DOM. Run one suite with `vp test --project unit` or `vp test --project nuxt`.
+
+The Vite+ Git hooks run `vp staged` before commits to check staged code with Oxlint and Oxfmt. The `commit-msg` hook checks Conventional Commit messages with Commitlint. `vp install` installs the hook dispatcher in each clone, and `vp hooks status` shows whether it is active.
 
 ## Production
 
