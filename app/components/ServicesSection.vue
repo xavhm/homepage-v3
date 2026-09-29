@@ -20,17 +20,26 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="panel section-panel services-section">
+  <section
+    id="services"
+    class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
+  >
     <SectionHeading
       title="Services I Provide"
       description="Helping businesses build intuitive products that drive growth."
     />
-    <div class="service-grid">
-      <div v-for="service in services" :key="service.number" class="service-card">
-        <span class="service-number">{{ service.number }}</span>
+    <div class="grid grid-cols-1 gap-0.5 sm:grid-cols-2">
+      <div
+        v-for="service in services"
+        :key="service.number"
+        class="flex min-h-40 flex-col justify-between rounded-[17px] bg-white p-5.5 sm:min-h-50 md:min-h-58.25 md:p-7.75"
+      >
+        <span class="text-[28px] tracking-tighter text-[#dedee0]">{{ service.number }}</span>
         <div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.detail }}</p>
+          <h3 class="mb-3.5 max-w-61.25 text-lg leading-[1.2] font-medium tracking-[-0.045em]">
+            {{ service.title }}
+          </h3>
+          <p class="text-muted text-[13px]">{{ service.detail }}</p>
         </div>
       </div>
     </div>

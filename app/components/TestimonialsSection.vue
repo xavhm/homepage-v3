@@ -32,22 +32,36 @@ const testimonials = [
 </script>
 
 <template>
-  <section id="testimonials" class="panel section-panel testimonials-section">
+  <section
+    id="testimonials"
+    class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
+  >
     <SectionHeading
       title="What Clients Are Saying"
       description="Insights from clients who trusted me to bring their ideas to life through design."
     />
-    <div class="testimonial-grid">
-      <article v-for="person in testimonials" :key="person.name" class="testimonial-card">
-        <div class="testimonial-person">
-          <img :src="person.avatar" :alt="person.name" width="44" height="44" loading="lazy" />
-          <div>
-            <strong>{{ person.name }}</strong
-            ><span>{{ person.handle }}</span>
+    <div class="grid grid-cols-1 gap-4.5 sm:grid-cols-2 sm:gap-2.5">
+      <article
+        v-for="person in testimonials"
+        :key="person.name"
+        class="min-h-52.5 rounded-2xl bg-white p-5.5"
+      >
+        <div class="flex items-center gap-2.5">
+          <img
+            class="size-10.5 rounded-full object-cover"
+            :src="person.avatar"
+            :alt="person.name"
+            width="44"
+            height="44"
+            loading="lazy"
+          />
+          <div class="grid gap-0.75">
+            <strong class="text-[13px] font-medium">{{ person.name }}</strong
+            ><span class="text-muted text-[11px]">{{ person.handle }}</span>
           </div>
-          <UIcon name="i-simple-icons-x" />
+          <UIcon name="i-simple-icons-x" class="ml-auto text-[13px]" />
         </div>
-        <p>{{ person.quote }}</p>
+        <p class="mt-5 text-[13px] leading-[1.6] text-[#4f4f53]">{{ person.quote }}</p>
       </article>
     </div>
   </section>

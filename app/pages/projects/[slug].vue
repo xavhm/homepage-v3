@@ -12,22 +12,29 @@ useSeoMeta({
 </script>
 
 <template>
-  <article v-if="project" class="project-detail panel">
-    <div class="project-meta">
+  <article
+    v-if="project"
+    class="overflow-clip rounded-b-[20px] border border-[#ededf0] bg-white px-5 pt-7 pb-9 sm:px-7.75 sm:pt-11.5 sm:pb-12.5"
+  >
+    <div class="text-muted flex flex-wrap gap-2.75 text-xs">
       <span>{{ project.category }}</span
       ><span aria-hidden="true">·</span><span>{{ project.dates }}</span>
     </div>
-    <h1>{{ project.title }}</h1>
-    <p class="project-intro">{{ project.description }}</p>
+    <h1
+      class="mt-4.25 mb-2.5 text-[clamp(1.5rem,1.25rem+1vw,1.625rem)] leading-[1.2] font-normal tracking-[-0.055em] text-balance wrap-break-word"
+    >
+      {{ project.title }}
+    </h1>
+    <p class="text-muted max-w-150 text-[13px] leading-[1.6]">{{ project.description }}</p>
     <a
-      class="button button-light preview-button"
+      class="border-line text-ink focus-visible:outline-ink mt-6.5 inline-flex min-h-11 items-center justify-center rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
       href="https://apechain.com/"
       target="_blank"
       rel="noopener noreferrer"
       >Preview Project</a
     >
     <img
-      class="detail-image detail-cover"
+      class="mt-10 aspect-[1.5] w-full rounded-[15px] object-cover"
       :src="project.cover"
       :alt="project.title"
       :style="{ viewTransitionName: `project-${project.key}` }"
@@ -35,16 +42,20 @@ useSeoMeta({
       height="1348"
       fetchpriority="high"
     />
-    <div class="detail-copy">
-      <p class="eyebrow">Ideation &amp; Conceptual</p>
-      <h2>{{ project.conceptTitle }}</h2>
-      <p>{{ project.conceptText }}</p>
+    <div class="my-12">
+      <p class="text-muted mb-5 text-[13px]">Ideation &amp; Conceptual</p>
+      <h2
+        class="mb-4.5 max-w-152.5 text-[clamp(1.5rem,1.2rem+1vw,1.75rem)] leading-tight font-medium tracking-[-0.055em] text-balance wrap-break-word"
+      >
+        {{ project.conceptTitle }}
+      </h2>
+      <p class="text-muted max-w-150 text-sm leading-[1.65]">{{ project.conceptText }}</p>
     </div>
-    <div class="detail-image-grid">
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
       <img
         v-for="(image, index) in project.detailImages"
         :key="image"
-        class="detail-image"
+        class="aspect-[1.15] w-full rounded-[15px] object-cover"
         :src="image"
         :alt="`${project.title} visual ${index + 2}`"
         loading="lazy"
@@ -52,12 +63,18 @@ useSeoMeta({
         height="1348"
       />
     </div>
-    <div class="detail-copy">
-      <p class="eyebrow">Production &amp; Execution</p>
-      <h2>{{ project.executionTitle }}</h2>
-      <p>{{ project.executionText }}</p>
+    <div class="my-12">
+      <p class="text-muted mb-5 text-[13px]">Production &amp; Execution</p>
+      <h2
+        class="mb-4.5 max-w-152.5 text-[clamp(1.5rem,1.2rem+1vw,1.75rem)] leading-tight font-medium tracking-[-0.055em] text-balance wrap-break-word"
+      >
+        {{ project.executionTitle }}
+      </h2>
+      <p class="text-muted max-w-150 text-sm leading-[1.65]">{{ project.executionText }}</p>
     </div>
-    <NuxtLink class="button button-light back-projects" to="/projects"
+    <NuxtLink
+      class="border-line text-ink focus-visible:outline-ink mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+      to="/projects"
       ><UIcon name="i-lucide-arrow-left" /> All Projects</NuxtLink
     >
   </article>
