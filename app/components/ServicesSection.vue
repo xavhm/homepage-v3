@@ -28,8 +28,8 @@ const services = [
       title="Services I Provide"
       description="Helping businesses build intuitive products that drive growth."
     />
-    <div class="grid grid-cols-1 gap-0.5 sm:grid-cols-2">
-      <div
+    <ul role="list" class="grid grid-cols-1 gap-0.5 sm:grid-cols-2">
+      <li
         v-for="service in services"
         :key="service.number"
         class="flex min-h-40 flex-col justify-between rounded-[17px] bg-white p-5.5 sm:min-h-50 md:min-h-58.25 md:p-7.75"
@@ -41,7 +41,7 @@ const services = [
           </h3>
           <p class="text-muted text-[13px]">{{ service.detail }}</p>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>

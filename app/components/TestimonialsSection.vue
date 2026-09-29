@@ -40,8 +40,8 @@ const testimonials = [
       title="What Clients Are Saying"
       description="Insights from clients who trusted me to bring their ideas to life through design."
     />
-    <div class="grid grid-cols-1 gap-4.5 sm:grid-cols-2 sm:gap-2.5">
-      <article
+    <ul role="list" class="grid grid-cols-1 gap-4.5 sm:grid-cols-2 sm:gap-2.5">
+      <li
         v-for="person in testimonials"
         :key="person.name"
         class="min-h-52.5 rounded-2xl bg-white p-5.5"
@@ -50,7 +50,7 @@ const testimonials = [
           <img
             class="size-10.5 rounded-full object-cover"
             :src="person.avatar"
-            :alt="person.name"
+            alt=""
             width="44"
             height="44"
             loading="lazy"
@@ -59,10 +59,10 @@ const testimonials = [
             <strong class="text-[13px] font-medium">{{ person.name }}</strong
             ><span class="text-muted text-[11px]">{{ person.handle }}</span>
           </div>
-          <UIcon name="i-simple-icons-x" class="ml-auto text-[13px]" />
+          <UIcon name="i-simple-icons-x" class="ml-auto text-[13px]" aria-hidden="true" />
         </div>
         <p class="mt-5 text-[13px] leading-[1.6] text-[#4f4f53]">{{ person.quote }}</p>
-      </article>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>

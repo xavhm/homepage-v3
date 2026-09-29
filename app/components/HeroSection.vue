@@ -1,26 +1,10 @@
-<script setup lang="ts">
-const roles = ['UI/UX Designer', 'Product Designer', 'Design Strategist']
-const roleIndex = ref(0)
-let roleTimer: ReturnType<typeof setInterval> | undefined
-
-onMounted(() => {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-  roleTimer = setInterval(() => {
-    roleIndex.value = (roleIndex.value + 1) % roles.length
-  }, 2800)
-})
-onUnmounted(() => {
-  if (roleTimer) clearInterval(roleTimer)
-})
-</script>
-
 <template>
   <section
     id="hero"
     class="relative scroll-mt-24 overflow-clip rounded-b-[20px] border border-[#ededf0] bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
-      class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#508549] sm:top-4.5 sm:right-5"
+      class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#3f6c38] sm:top-4.5 sm:right-5"
     >
       <span class="size-1.25 rounded-full bg-[#51af3e]" />Open for 2 new projects
     </div>
@@ -35,7 +19,7 @@ onUnmounted(() => {
       />
       <div>
         <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Calib Harrison</p>
-        <p class="text-muted text-sm" aria-live="off">{{ roles[roleIndex] }}</p>
+        <p class="text-muted text-sm">Product Designer</p>
       </div>
     </div>
     <h1
@@ -65,15 +49,13 @@ onUnmounted(() => {
       <p class="mb-6.25 text-[13px] font-medium">Trusted by 30+ Brands including</p>
       <div
         class="grid grid-cols-2 items-center gap-x-4 gap-y-5 sm:flex sm:justify-between sm:gap-4.5"
-        role="group"
-        aria-label="Trusted brand logos"
       >
         <img
           v-for="number in 5"
           :key="number"
           class="col-span-1 h-5 max-w-full object-contain last:col-span-2 last:mx-auto sm:max-w-[21%] sm:last:mx-0"
           :src="`/portfolio/logo-${number}.svg`"
-          alt="Logoipsum"
+          alt=""
           height="20"
         />
       </div>

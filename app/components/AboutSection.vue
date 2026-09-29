@@ -3,10 +3,10 @@
     id="about"
     class="scroll-mt-24 overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
   >
-    <p class="text-muted mb-5.5 text-[13px]">About my self.</p>
+    <h2 class="text-muted mb-5.5 text-[13px] font-normal">About me</h2>
     <p class="text-muted max-w-152.5 text-[17px] leading-[1.48] tracking-[-0.04em]">
       <strong class="text-ink font-medium"
-        >Hey, I’m Caleb Harrison — a strategy-driven product designer</strong
+        >Hey, I’m Calib Harrison — a strategy-driven product designer</strong
       >
       creating scalable experiences that improve retention, conversions, and business growth.
     </p>

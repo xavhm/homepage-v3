@@ -40,12 +40,13 @@ const faqs = [
         :open="index === 0"
       >
         <summary
-          class="flex min-h-14 cursor-pointer list-none items-center justify-between gap-5 text-sm font-medium [&::-webkit-details-marker]:hidden"
+          class="focus-visible:outline-ink flex min-h-14 cursor-pointer list-none items-center justify-between gap-5 rounded-sm text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden"
         >
           {{ faq.question
           }}<UIcon
             name="i-lucide-plus"
-            class="shrink-0 transition-transform group-open:rotate-45"
+            class="shrink-0 transition-transform group-open:rotate-45 motion-reduce:transition-none"
+            aria-hidden="true"
           />
         </summary>
         <p class="text-muted mb-4.75 leading-[1.6]">{{ faq.answer }}</p>
