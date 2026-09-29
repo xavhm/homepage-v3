@@ -118,13 +118,10 @@ Source: `app/components/ContactSection.vue`.
 - Subtitle: `I'm always open to new opportunities, collaborations, and creative conversations. Feel free to reach out to discuss your project.`
 - Name field: accessible label `Full Name`; placeholder `Full Name*`
 - Email field: accessible label `Email Address`; placeholder `Email Address*`
-- Budget field: accessible label and default option `Budget`
-- Budget options: `$500 - $1,000`, `$1000 - $5000`, `$5,000 - $10,000`, `$10,000 - $20,000`, `$20,000 - $50,000`
 - Message field: accessible label `Project details`; placeholder `Tell me about your project`
 - Submit button: `Send Message`
 - Generated email subject: `Project inquiry from {name}`
-- Generated email body labels: `Name:`, `Email:`, `Budget:`
-- Generated email fallback when no budget is selected: `Not specified`
+- Generated email body labels: `Name:`, `Email:`
 
 ## Project detail pages `/projects/{slug}`
 
@@ -213,4 +210,3 @@ These are observations about the current template copy, not edits to it.
 - Orbit's detail text names **Petronex** and **Astra**; Finova's names **Velto**; Lunex's names **Fasonex**; Lumina's names **CloudZero**.
 - All five brand logos use the same alt text, `Logoipsum`.
 - The About label reads `About my self.` and the first testimonial name reads `Wilium jonson`.
-- The budget option `$1000 - $5000` uses different number formatting from the other options.

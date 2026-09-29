@@ -1,14 +1,11 @@
 <script setup lang="ts">
 const name = ref('')
 const email = ref('')
-const budget = ref('')
 const message = ref('')
 
 function sendMessage() {
   const subject = encodeURIComponent(`Project inquiry from ${name.value}`)
-  const body = encodeURIComponent(
-    `Name: ${name.value}\nEmail: ${email.value}\nBudget: ${budget.value || 'Not specified'}\n\n${message.value}`,
-  )
+  const body = encodeURIComponent(`Name: ${name.value}\nEmail: ${email.value}\n\n${message.value}`)
   window.location.href = `mailto:contact@calib.com?subject=${subject}&body=${body}`
 }
 </script>
@@ -51,24 +48,6 @@ function sendMessage() {
             required
           />
         </div>
-      </div>
-      <div class="grid gap-1.5">
-        <label for="contact-budget" class="text-ink text-[13px] font-medium"
-          >Budget (optional)</label
-        >
-        <select
-          id="contact-budget"
-          class="text-ink focus-visible:outline-ink w-full rounded-[10px] border border-[#85858a] bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
-          v-model="budget"
-          name="budget"
-        >
-          <option value="">Select a budget</option>
-          <option>$500 - $1,000</option>
-          <option>$1000 - $5000</option>
-          <option>$5,000 - $10,000</option>
-          <option>$10,000 - $20,000</option>
-          <option>$20,000 - $50,000</option>
-        </select>
       </div>
       <div class="grid gap-1.5">
         <label for="contact-message" class="text-ink text-[13px] font-medium"
