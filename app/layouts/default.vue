@@ -17,7 +17,7 @@ watch(
   >
     <a
       href="#main-content"
-      class="bg-ink focus-visible:outline-ink sr-only fixed top-3 left-3 z-[60] rounded-lg px-4 py-3 font-medium text-white focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="bg-ink focus-visible:outline-ink sr-only fixed top-3 left-3 z-60 rounded-lg px-4 py-3 font-medium text-white focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2"
       >Skip to main content</a
     >
     <SiteHeader />
