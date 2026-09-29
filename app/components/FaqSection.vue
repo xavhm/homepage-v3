@@ -36,7 +36,8 @@ const faqs = [
       <details
         v-for="(faq, index) in faqs"
         :key="faq.question"
-        class="group rounded-xl bg-white px-5"
+        name="faq"
+        class="faq-item group rounded-xl bg-white px-5"
         :open="index === 0"
       >
         <summary
@@ -54,3 +55,31 @@ const faqs = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.faq-item {
+  interpolate-size: allow-keywords;
+}
+
+.faq-item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    block-size 220ms ease,
+    opacity 180ms ease,
+    content-visibility 220ms;
+  transition-behavior: allow-discrete;
+}
+
+.faq-item[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content {
+    transition: none;
+  }
+}
+</style>
