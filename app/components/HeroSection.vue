@@ -1,7 +1,7 @@
 <template>
   <section
     id="hero"
-    class="relative scroll-mt-24 overflow-clip rounded-b-[20px] border border-[#ededf0] bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
+    class="border-surface relative scroll-mt-22 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
       class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#3f6c38] sm:top-4.5 sm:right-5"

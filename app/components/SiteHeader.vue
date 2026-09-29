@@ -13,7 +13,7 @@ let timer: ReturnType<typeof setInterval> | undefined
 onMounted(() => {
   const update = () => {
     localTime.value = new Intl.DateTimeFormat('en-US', {
-      timeZone: 'America/Los_Angeles',
+      timeZone: 'Europe/Paris',
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit',
@@ -30,13 +30,13 @@ onUnmounted(() => {
 
 <template>
   <header
-    class="sticky top-0 z-50 flex min-h-16 items-center justify-center gap-4 rounded-t-[20px] bg-[#f5f5f7] px-3 min-[741px]:justify-between min-[741px]:px-6"
+    class="sticky top-16 z-50 flex min-h-16 items-center justify-center gap-4 rounded-[20px] bg-[#f5f5f7] px-3 min-[741px]:justify-between min-[741px]:px-6"
   >
     <div
       class="hidden items-baseline gap-1.5 text-xs tracking-[-0.02em] whitespace-nowrap min-[741px]:flex"
     >
       <strong class="font-semibold">{{ localTime }}</strong
-      ><span class="text-muted text-[11px]">Los Angeles</span>
+      ><span class="text-muted text-[11px]">La Rochelle</span>
     </div>
     <nav
       class="flex w-full items-center justify-between gap-1 overflow-x-auto text-xs font-medium whitespace-nowrap min-[741px]:w-auto min-[741px]:gap-5.5 min-[741px]:overflow-visible min-[741px]:text-[13px]"
