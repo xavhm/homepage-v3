@@ -58,8 +58,8 @@ Source: `app/components/ProjectsSection.vue`, with cards from `app/data/projects
 
 - Heading: `Case Studies & Projects`
 - Subtitle: `A selection of projects showcasing strategy, design thinking, and measurable impact.`
-- Button: `See All Projects`
 - Featured cards, in order: Orbit, Nova™, Finova, Lunex. Their exact category, title, image alt text, and accessible card labels appear in [Project copy](#project-copy).
+- Each card links directly to its project detail page. The hero's `See my Projects` link jumps to this section.
 
 ### Services
 
@@ -126,17 +126,6 @@ Source: `app/components/ContactSection.vue`.
 - Generated email body labels: `Name:`, `Email:`, `Budget:`
 - Generated email fallback when no budget is selected: `Not specified`
 
-## Project listing `/projects`
-
-Source: `app/pages/projects/index.vue` and `app/components/ProjectCard.vue`.
-
-- Page title: `Projects — Calib Harrison`
-- Meta description: `Case studies and projects by Calib Harrison.`
-- Visually hidden page heading: `Projects`
-- Cards show each project's category and title, in the order listed under [Project copy](#project-copy).
-- Each card's cover image alt text is its project title.
-- Each card's accessible link label is `{category}: {title}`; exact values are listed with each project below.
-
 ## Project detail pages `/projects/{slug}`
 
 Source: `app/pages/projects/[slug].vue`, with content from `app/data/projects.ts`.
@@ -148,14 +137,14 @@ Shared copy and patterns on every project detail page:
 - Primary link: `Preview Project`
 - First content label: `Ideation & Conceptual`
 - Second content label: `Production & Execution`
-- Return link: `All Projects`
+- Return link: `Back`, to the homepage projects section
 - Cover image alt text: the project's title
 - First and second detail image alt text: `{project title} visual 2` and `{project title} visual 3`
 - Unknown project error status message: `Project not found`
 
 ### Project copy
 
-Each project entry gives its listing card, detail page copy, and exact image alt text. The title is also the cover image alt text on both listing and detail pages.
+Each project entry gives its homepage card, detail page copy, and exact image alt text. The title is also the cover image alt text on the detail page.
 
 #### Orbit — `/projects/orbit-saas-brand-experience`
 
@@ -208,32 +197,6 @@ Each project entry gives its listing card, detail page copy, and exact image alt
 - Execution heading: `The redesign approach focused on structure, consistency, and improved interaction design.`
 - Execution body: `A refreshed UI system was developed with scalable components and responsive layouts. Typography, spacing, and visual hierarchy were refined to improve readability, while interactions were optimized to create a smoother and more engaging user experience across devices.`
 - Detail image alt text: `Lunex Website Redesign visual 2`; `Lunex Website Redesign visual 3`
-
-#### Lumina — `/projects/lumina-brand-design`
-
-- Category: `Technology / SaaS`
-- Dates: `Feb 12th – Mar 22nd`
-- Title and cover alt: `Lumina - Brand Design`
-- Card accessible label: `Technology / SaaS: Lumina - Brand Design`
-- Description: `CloudZero is a brand design project focused on creating a modern and scalable identity for a cloud-based platform.`
-- Concept heading: `CloudZero was envisioned as a clean and future-ready brand built around clarity and digital reliability.`
-- Concept body: `The goal was to create a visual identity that reflects simplicity and innovation. The concept focused on minimal forms, soft color tones, and a balanced system to communicate trust, scalability, and modern technology.`
-- Execution heading: `The design approach focused on building a flexible and consistent visual system.`
-- Execution body: `A complete brand identity was developed, including logo, typography, color system, and layout guidelines. Each element was designed to work seamlessly across digital products, marketing assets, and brand communications.`
-- Detail image alt text: `Lumina - Brand Design visual 2`; `Lumina - Brand Design visual 3`
-
-#### Ohio™ — `/projects/ohio-branding`
-
-- Category: `Branding`
-- Dates: `Mar 5th – Apr 18th`
-- Title and cover alt: `Ohio™ Branding`
-- Card accessible label: `Branding: Ohio™ Branding`
-- Description: `Ohio™ was designed as a modern and versatile brand identity, crafted to create a bold, memorable presence across both digital and physical touchpoints.`
-- Concept heading: `Ohio™ was envisioned as a bold and modern brand identity, designed to create a seamless visual presence across digital and physical experiences.`
-- Concept body: `The goal was to craft a brand identity that feels modern, consistent, and instantly recognizable across every touchpoint. The concept focused on simplicity, clarity, and versatility—creating a visual system that communicates confidence while remaining adaptable across digital and print applications.`
-- Execution heading: `The design approach for Ohio™ focused on consistency, flexibility, and a strong visual identity across every brand touchpoint.`
-- Execution body: `A scalable brand identity system was created to support both digital and print applications. Visual elements were designed for flexibility, while the overall style was structured to maintain consistency across different formats and brand touchpoints.`
-- Detail image alt text: `Ohio™ Branding visual 2`; `Ohio™ Branding visual 3`
 
 ## Shared footer
 

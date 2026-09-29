@@ -41,7 +41,7 @@
       >
       <NuxtLink
         class="border-line text-ink focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-        to="/projects"
+        to="/#projects"
         >See my Projects</NuxtLink
       >
     </div>

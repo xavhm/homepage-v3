@@ -90,42 +90,4 @@ export const projects: PortfolioProject[] = [
     executionText:
       'A refreshed UI system was developed with scalable components and responsive layouts. Typography, spacing, and visual hierarchy were refined to improve readability, while interactions were optimized to create a smoother and more engaging user experience across devices.',
   },
-  {
-    slug: 'lumina-brand-design',
-    key: 'lumina',
-    category: 'Technology / SaaS',
-    dates: 'Feb 12th – Mar 22nd',
-    title: 'Lumina - Brand Design',
-    description:
-      'CloudZero is a brand design project focused on creating a modern and scalable identity for a cloud-based platform.',
-    cover: '/portfolio/lumina-cover.avif',
-    detailImages: ['/portfolio/lumina-detail-1.avif', '/portfolio/lumina-detail-2.avif'],
-    conceptTitle:
-      'CloudZero was envisioned as a clean and future-ready brand built around clarity and digital reliability.',
-    conceptText:
-      'The goal was to create a visual identity that reflects simplicity and innovation. The concept focused on minimal forms, soft color tones, and a balanced system to communicate trust, scalability, and modern technology.',
-    executionTitle:
-      'The design approach focused on building a flexible and consistent visual system.',
-    executionText:
-      'A complete brand identity was developed, including logo, typography, color system, and layout guidelines. Each element was designed to work seamlessly across digital products, marketing assets, and brand communications.',
-  },
-  {
-    slug: 'ohio-branding',
-    key: 'ohio',
-    category: 'Branding',
-    dates: 'Mar 5th – Apr 18th',
-    title: 'Ohio™ Branding',
-    description:
-      'Ohio™ was designed as a modern and versatile brand identity, crafted to create a bold, memorable presence across both digital and physical touchpoints.',
-    cover: '/portfolio/ohio-cover.avif',
-    detailImages: ['/portfolio/ohio-detail-1.avif', '/portfolio/ohio-detail-2.avif'],
-    conceptTitle:
-      'Ohio™ was envisioned as a bold and modern brand identity, designed to create a seamless visual presence across digital and physical experiences.',
-    conceptText:
-      'The goal was to craft a brand identity that feels modern, consistent, and instantly recognizable across every touchpoint. The concept focused on simplicity, clarity, and versatility—creating a visual system that communicates confidence while remaining adaptable across digital and print applications.',
-    executionTitle:
-      'The design approach for Ohio™ focused on consistency, flexibility, and a strong visual identity across every brand touchpoint.',
-    executionText:
-      'A scalable brand identity system was created to support both digital and print applications. Visual elements were designed for flexibility, while the overall style was structured to maintain consistency across different formats and brand touchpoints.',
-  },
 ]

@@ -74,8 +74,8 @@ useSeoMeta({
     </div>
     <NuxtLink
       class="border-line text-ink focus-visible:outline-ink mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-      to="/projects"
-      ><UIcon name="i-lucide-arrow-left" /> All Projects</NuxtLink
+      to="/#projects"
+      ><UIcon name="i-lucide-arrow-left" /> Back</NuxtLink
     >
   </article>
 </template>
