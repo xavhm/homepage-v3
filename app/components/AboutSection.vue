@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="scroll-mt-[calc(6rem-5px)] overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
+    class="scroll-mt-22.75 overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
   >
     <h2 class="text-muted mb-5.5 text-[13px] font-normal">About me</h2>
     <p class="text-muted max-w-152.5 text-[17px] leading-[1.48] tracking-[-0.04em]">
@@ -10,28 +10,27 @@
       >
       creating scalable experiences that improve retention, conversions, and business growth.
     </p>
-    <div
-      class="mt-7.25 flex flex-col items-start gap-1 text-xs sm:flex-row sm:flex-wrap sm:items-center sm:gap-4.25"
-    >
+    <div class="mt-7.25 flex flex-wrap items-center gap-2.5">
+      <CopyButton
+        label="contact@calib.com"
+        value="contact@calib.com"
+        icon="i-lucide-mail"
+        copy-label="Copy email address"
+      />
+      <CopyButton
+        label="+(123) 254 587 00"
+        value="+12325458700"
+        icon="i-lucide-smartphone"
+        copy-label="Copy phone number"
+      />
       <a
-        class="focus-visible:outline-ink inline-flex min-h-10 items-center gap-2.25 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="mailto:contact@calib.com"
-        ><UIcon name="i-lucide-mail" class="text-base" />contact@calib.com</a
-      >
-      <span class="hidden text-[#aaa] sm:inline">•</span>
-      <a
-        class="focus-visible:outline-ink inline-flex min-h-10 items-center gap-2.25 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="tel:+12325458700"
-        ><UIcon name="i-lucide-smartphone" class="text-base" />+(123) 254 587 00</a
-      >
-      <span class="hidden text-[#aaa] sm:inline">•</span>
-      <a
-        class="focus-visible:outline-ink inline-flex min-h-10 items-center gap-2.25 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="https://drive.google.com/file/d/1KdjLEgOd4peTDzXIKPW-uXYkAdEEAidJ/view?usp=sharing"
+        class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
+        href="https://example.com/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        ><UIcon name="i-lucide-download" class="text-base" />Download CV</a
       >
+        <UIcon name="i-lucide-download" class="size-4 shrink-0" />Download CV
+      </a>
     </div>
     <div
       class="grid grid-cols-2 gap-x-5 gap-y-6.5 pt-10 min-[700px]:grid-cols-4 min-[700px]:pt-11.25"

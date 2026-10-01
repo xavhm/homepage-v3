@@ -13,11 +13,11 @@ function sendMessage() {
 <template>
   <section
     id="contact"
-    class="border-surface bg-surface scroll-mt-[calc(6rem-5px)] overflow-clip rounded-[20px] border px-5 pt-8.5 pb-9 sm:px-7.75 sm:pt-10.5"
+    class="border-surface bg-surface scroll-mt-22.75 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-9 sm:px-7.75 sm:pt-10.5"
   >
     <SectionHeading
       title="Let's bring your idea to life"
-      description="I'm always open to new opportunities, collaborations, and creative conversations. Feel free to reach out to discuss your project."
+      description="I'm always open to new opportunities. Feel free to reach out to discuss your project."
     />
     <form class="grid gap-2.5" @submit.prevent="sendMessage">
       <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
