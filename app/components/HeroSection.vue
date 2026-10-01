@@ -1,3 +1,20 @@
+<script setup lang="ts">
+const technologies = [
+  { name: 'CSS', icon: 'i-simple-icons-css' },
+  { name: 'TypeScript', icon: 'i-simple-icons-typescript' },
+  { name: 'Tailwind CSS', icon: 'i-simple-icons-tailwindcss' },
+  { name: 'Vue', icon: 'i-simple-icons-vuedotjs' },
+  { name: 'React', icon: 'i-simple-icons-react' },
+  { name: 'Nuxt', icon: 'i-simple-icons-nuxt' },
+  { name: 'Cloudflare', icon: 'i-simple-icons-cloudflare' },
+  { name: 'Docker', icon: 'i-simple-icons-docker' },
+  { name: 'OpenAI', icon: 'i-simple-icons-openai' },
+  { name: 'Claude Code', icon: 'i-simple-icons-claudecode' },
+  { name: 'GitHub', icon: 'i-simple-icons-github' },
+  { name: 'GitLab', icon: 'i-simple-icons-gitlab' },
+]
+</script>
+
 <template>
   <section
     id="hero"
@@ -46,19 +63,29 @@
       >
     </div>
     <div class="mt-12 sm:mt-13">
-      <p class="mb-6.25 text-[13px] font-medium">Trusted by 30+ Brands including</p>
-      <div
-        class="grid grid-cols-2 items-center gap-x-4 gap-y-5 sm:flex sm:justify-between sm:gap-4.5"
+      <p class="mb-5 text-[13px] font-medium">Tools I work with</p>
+      <ul class="sr-only">
+        <li v-for="technology in technologies" :key="technology.name">{{ technology.name }}</li>
+      </ul>
+      <UMarquee
+        :repeat="2"
+        pause-on-hover
+        aria-hidden="true"
+        class="text-ink py-2 [--duration:45s] [--gap:--spacing(5)] motion-reduce:overflow-x-auto sm:[--gap:--spacing(6)]"
+        :ui="{
+          root: 'before:w-8 before:from-white after:w-8 after:from-white motion-reduce:before:hidden motion-reduce:after:hidden',
+          content: 'motion-reduce:[&:not(:first-child)]:hidden',
+        }"
       >
-        <img
-          v-for="number in 5"
-          :key="number"
-          class="col-span-1 h-5 max-w-full object-contain last:col-span-2 last:mx-auto sm:max-w-[21%] sm:last:mx-0"
-          :src="`/portfolio/logo-${number}.svg`"
-          alt=""
-          height="20"
-        />
-      </div>
+        <div
+          v-for="technology in technologies"
+          :key="technology.name"
+          class="flex shrink-0 items-center gap-2.5"
+        >
+          <UIcon :name="technology.icon" class="size-7 shrink-0" />
+          <span class="text-[13px] font-medium whitespace-nowrap">{{ technology.name }}</span>
+        </div>
+      </UMarquee>
     </div>
   </section>
 </template>

@@ -6,7 +6,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="grid gap-2.5">
+  <div class="grid grid-cols-1 gap-2.5">
     <HeroSection />
     <AboutSection />
     <ExperienceSection />
