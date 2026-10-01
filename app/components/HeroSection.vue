@@ -6,10 +6,12 @@ const technologies = [
   { name: 'Vue', icon: 'i-simple-icons-vuedotjs' },
   { name: 'React', icon: 'i-simple-icons-react' },
   { name: 'Nuxt', icon: 'i-simple-icons-nuxt' },
+  { name: 'Next.js', icon: 'i-simple-icons-nextdotjs' },
   { name: 'Cloudflare', icon: 'i-simple-icons-cloudflare' },
   { name: 'Docker', icon: 'i-simple-icons-docker' },
   { name: 'OpenAI', icon: 'i-simple-icons-openai' },
   { name: 'Claude Code', icon: 'i-simple-icons-claudecode' },
+  { name: 'Node.js', icon: 'i-simple-icons-nodedotjs' },
   { name: 'GitHub', icon: 'i-simple-icons-github' },
   { name: 'GitLab', icon: 'i-simple-icons-gitlab' },
 ]

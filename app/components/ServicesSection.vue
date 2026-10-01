@@ -28,7 +28,7 @@ const services = [
       title="Services I Provide"
       description="Helping businesses build intuitive products that drive growth."
     />
-    <ul role="list" class="grid grid-cols-1 gap-0.5 sm:grid-cols-2">
+    <ul role="list" class="grid grid-cols-1 gap-4.5 sm:grid-cols-2 sm:gap-2.5">
       <li
         v-for="service in services"
         :key="service.number"

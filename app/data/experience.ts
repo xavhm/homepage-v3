@@ -40,26 +40,4 @@ export const experienceGroups: { title: string; entries: ExperienceEntry[] }[] =
       },
     ],
   },
-  {
-    title: 'Education and training',
-    entries: [
-      {
-        startDate: '2021',
-        endDate: '2023',
-        location: 'To confirm',
-        position: 'Front-End / React Application Developer — RNCP Qualification',
-        organization: 'OpenClassrooms',
-        description: 'Training in React, state management, accessibility, and performance.',
-      },
-      {
-        startDate: '2021',
-        endDate: '2021',
-        location: 'To confirm',
-        position: 'Full-Stack Web Development Bootcamp',
-        organization: 'Le Wagon',
-        description:
-          'Training in Ruby on Rails, MVC architecture, JavaScript, databases, and web application development.',
-      },
-    ],
-  },
 ]

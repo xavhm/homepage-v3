@@ -1,9 +1,9 @@
 <template>
   <footer
-    class="text-muted flex flex-col gap-3 px-3.75 pt-7.5 pb-10 text-xs sm:flex-row sm:justify-between sm:gap-5 sm:px-7.5 sm:pt-10.5 sm:pb-14.5"
+    class="text-muted flex items-baseline justify-between gap-2 px-2.5 pt-7.5 pb-10 text-[0.625rem] whitespace-nowrap min-[24rem]:text-xs sm:gap-5 sm:px-7.5 sm:pt-10.5 sm:pb-14.5"
   >
     <span>Copyright © 2026 Calib Harrison.</span>
-    <div class="flex flex-wrap gap-x-5.5 gap-y-2">
+    <div class="flex gap-2 sm:gap-5.5">
       <a
         class="focus-visible:outline-ink min-h-6 transition-opacity hover:opacity-50 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://portfolik.framer.website/legal/privacy-policy"
