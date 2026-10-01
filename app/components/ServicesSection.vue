@@ -22,7 +22,7 @@ const services = [
 <template>
   <section
     id="services"
-    class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
+    class="border-surface bg-surface scroll-mt-[calc(6rem-5px)] overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
   >
     <SectionHeading
       title="Services I Provide"

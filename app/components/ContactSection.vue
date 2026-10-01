@@ -13,7 +13,7 @@ function sendMessage() {
 <template>
   <section
     id="contact"
-    class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-9 sm:px-7.75 sm:pt-10.5"
+    class="border-surface bg-surface scroll-mt-[calc(6rem-5px)] overflow-clip rounded-[20px] border px-5 pt-8.5 pb-9 sm:px-7.75 sm:pt-10.5"
   >
     <SectionHeading
       title="Let's bring your idea to life"

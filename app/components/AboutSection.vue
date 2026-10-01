@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="scroll-mt-24 overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
+    class="scroll-mt-[calc(6rem-5px)] overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
   >
     <h2 class="text-muted mb-5.5 text-[13px] font-normal">About me</h2>
     <p class="text-muted max-w-152.5 text-[17px] leading-[1.48] tracking-[-0.04em]">

@@ -18,7 +18,7 @@ const technologies = [
 <template>
   <section
     id="hero"
-    class="border-surface relative scroll-mt-22 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
+    class="border-surface relative scroll-mt-[calc(5.5rem-5px)] overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
       class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#3f6c38] sm:top-4.5 sm:right-5"
@@ -51,15 +51,13 @@ const technologies = [
     <div class="mt-6.5 flex flex-wrap gap-2.5">
       <a
         class="focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border border-transparent bg-[#101013] px-4.75 text-[13px] font-medium whitespace-nowrap text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#343438] focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="https://cal.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Book a Free Call</a
+        href="#contact"
+        >Get in touch</a
       >
-      <NuxtLink
+      <a
         class="border-line text-ink focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-        to="/#projects"
-        >See my Projects</NuxtLink
+        href="#projects"
+        >See my Projects</a
       >
     </div>
     <div class="mt-12 sm:mt-13">
