@@ -69,11 +69,11 @@ onUnmounted(() => {
       /></a>
       <a
         class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="https://dribbble.com/"
+        href="https://github.com/"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Dribbble"
-        ><UIcon name="i-simple-icons-dribbble"
+        aria-label="GitHub"
+        ><UIcon name="i-simple-icons-github"
       /></a>
     </div>
   </header>
