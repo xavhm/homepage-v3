@@ -18,12 +18,15 @@ const technologies = [
 <template>
   <section
     id="hero"
-    class="border-surface relative scroll-mt-[calc(5.5rem-5px)] overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
+    class="border-surface relative scroll-mt-20.75 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
       class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#3f6c38] sm:top-4.5 sm:right-5"
     >
-      <span class="size-1.25 rounded-full bg-[#51af3e]" />Open for 2 new projects
+      <span
+        class="size-1.75 rounded-full bg-[#51af3e] motion-safe:animate-pulse"
+        aria-hidden="true"
+      />Open for 2 new projects
     </div>
     <div class="mb-6 flex items-center gap-4.75 sm:mb-7.5">
       <img
