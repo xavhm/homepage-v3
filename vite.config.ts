@@ -1,16 +1,20 @@
-import { defineVitestProject } from '@nuxt/test-utils/config'
 import { defineConfig } from 'vite-plus'
 
 export default defineConfig({
   test: {
     projects: [
-      await defineVitestProject({
-        test: {
-          name: 'nuxt',
-          include: ['./app/tests/**/*.test.ts'],
-          environment: 'nuxt',
-        },
-      }),
+      // OxC also loads this config: start Nuxt only when Vitest resolves the project.
+      async () => {
+        const { defineVitestProject } = await import('@nuxt/test-utils/config')
+
+        return defineVitestProject({
+          test: {
+            name: 'nuxt',
+            include: ['./app/tests/**/*.test.ts'],
+            environment: 'nuxt',
+          },
+        })
+      },
     ],
   },
   staged: {
