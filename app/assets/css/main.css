@@ -9,6 +9,40 @@
   --font-sans: 'Inter Display', Inter, 'Helvetica Neue', Arial, sans-serif;
 }
 
+.site-layout {
+  --header-offset: max(1rem, env(safe-area-inset-top, 0px));
+  margin-top: var(--header-offset);
+}
+
+/* Keep the fade at the viewport edge as the document scrolls underneath it. */
+.site-header-fade {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 40;
+  height: calc(var(--header-offset) + 4rem + 1.5rem);
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    white var(--header-offset),
+    rgb(255 255 255 / 65%) calc(var(--header-offset) + 1rem),
+    rgb(255 255 255 / 25%) calc(var(--header-offset) + 4rem),
+    rgb(255 255 255 / 0%) 100%
+  );
+}
+
+.site-header {
+  top: var(--header-offset);
+  background: #f5f5f7;
+}
+
+@supports (backdrop-filter: blur(16px)) or (-webkit-backdrop-filter: blur(16px)) {
+  .site-header {
+    background: rgb(245 245 247 / 65%);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 0.28s;

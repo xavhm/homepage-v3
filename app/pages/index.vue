@@ -9,6 +9,7 @@ useSeoMeta({
   <div class="grid gap-2.5">
     <HeroSection />
     <AboutSection />
+    <ExperienceSection />
     <ProjectsSection />
     <ServicesSection />
     <TestimonialsSection />

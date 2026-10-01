@@ -30,7 +30,7 @@ onUnmounted(() => {
 
 <template>
   <header
-    class="sticky top-16 z-50 flex min-h-16 items-center justify-center gap-4 rounded-[20px] bg-[#f5f5f7] px-3 min-[741px]:justify-between min-[741px]:px-6"
+    class="site-header sticky z-50 flex min-h-16 items-center justify-center gap-4 rounded-[20px] px-3 min-[741px]:justify-between min-[741px]:px-6"
   >
     <div
       class="hidden items-baseline gap-1.5 text-xs tracking-[-0.02em] whitespace-nowrap min-[741px]:flex"

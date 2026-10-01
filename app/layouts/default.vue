@@ -13,15 +13,16 @@ watch(
 
 <template>
   <div
-    class="text-ink mx-auto mt-2.5 w-[calc(100%-20px)] max-w-181 font-sans text-sm tracking-tight scheme-light md:mt-15.5 md:w-[calc(100%-32px)]"
+    class="site-layout text-ink mx-auto w-[calc(100%-20px)] max-w-181 font-sans text-sm tracking-tight scheme-light md:w-[calc(100%-32px)]"
   >
     <a
       href="#main-content"
       class="bg-ink focus-visible:outline-ink sr-only fixed top-3 left-3 z-60 rounded-lg px-4 py-3 font-medium text-white focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2"
       >Skip to main content</a
     >
+    <div class="site-header-fade" aria-hidden="true" />
     <SiteHeader />
-    <main id="main-content" tabindex="-1" class="focus:outline-none">
+    <main id="main-content" tabindex="-1" class="pt-6 focus:outline-none">
       <slot />
     </main>
     <SiteFooter />
