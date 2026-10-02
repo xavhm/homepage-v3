@@ -12,6 +12,8 @@ watch(
 </script>
 
 <template>
+  <NuxtAnnouncer />
+  <NuxtRouteAnnouncer />
   <div
     class="site-layout text-ink mx-auto w-[calc(100%-20px)] max-w-181 font-sans text-sm tracking-tight scheme-light md:w-[calc(100%-32px)]"
   >
