@@ -34,7 +34,7 @@
       />
       <a
         class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
-        href="/cv.pdf"
+        href="/XavierHernandez_FrontendEng_Resume.pdf"
         download
       >
         <UIcon name="i-lucide-download" class="size-4 shrink-0" aria-hidden="true" />
