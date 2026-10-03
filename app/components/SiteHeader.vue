@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const nav = [
-  { label: 'Home', href: '/#hero' },
-  { label: 'About', href: '/#about' },
-  { label: 'Projects', href: '/#projects' },
-  { label: 'Services', href: '/#services' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Home', to: '/#hero' },
+  { label: 'About', to: '/#about' },
+  { label: 'Projects', to: '/#projects' },
+  { label: 'Services', to: '/#services' },
+  { label: 'Contact', to: '/#contact' },
 ]
 
 const localTime = ref('--:--:--')
@@ -42,23 +42,23 @@ onUnmounted(() => {
       class="flex w-full items-center justify-between gap-1 overflow-x-auto text-xs font-medium whitespace-nowrap min-[741px]:w-auto min-[741px]:gap-5.5 min-[741px]:overflow-visible min-[741px]:text-[13px]"
       aria-label="Main navigation"
     >
-      <a
+      <NuxtLink
         v-for="item in nav"
         :key="item.label"
-        :href="item.href"
+        :to="item.to"
         class="focus-visible:outline-ink flex min-h-11 shrink-0 items-center px-1.5 transition-opacity hover:opacity-50 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 min-[741px]:px-0"
-        >{{ item.label }}</a
+        >{{ item.label }}</NuxtLink
       >
     </nav>
     <div class="hidden gap-2 min-[741px]:flex" role="group" aria-label="Social links">
-      <a
+      <!-- <a
         class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://x.com/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="X"
         ><UIcon name="i-simple-icons-x"
-      /></a>
+      /></a> -->
       <a
         class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://linkedin.com/"

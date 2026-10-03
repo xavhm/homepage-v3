@@ -31,13 +31,16 @@ const technologies = [
       />Open for 2 new projects
     </div>
     <div class="mb-6 flex items-center gap-4.75 sm:mb-7.5">
-      <img
-        class="size-17 rounded-full object-cover sm:size-21.5"
+      <NuxtPicture
+        format="avif,webp"
+        class="block size-17 shrink-0 sm:size-21.5"
+        :img-attrs="{ class: 'size-full rounded-full object-cover', fetchpriority: 'high' }"
         src="/portfolio/profile.avif"
         width="86"
         height="86"
         alt="Calib Harrison"
-        fetchpriority="high"
+        sizes="68px sm:86px"
+        densities="x1 x2"
       />
       <div>
         <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Calib Harrison</p>

@@ -14,7 +14,7 @@ useSeoMeta({
 <template>
   <article
     v-if="project"
-    class="overflow-clip rounded-b-[20px] border border-[#ededf0] bg-white px-5 pt-7 pb-9 sm:px-7.75 sm:pt-11.5 sm:pb-12.5"
+    class="overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-5 pt-7 pb-9 sm:px-7.75 sm:pt-11.5 sm:pb-12.5"
   >
     <div class="text-muted flex flex-wrap gap-2.75 text-xs">
       <span>{{ project.category }}</span
@@ -33,14 +33,20 @@ useSeoMeta({
       rel="noopener noreferrer"
       >Preview Project</a
     >
-    <img
-      class="mt-10 aspect-[1.5] w-full rounded-[15px] object-cover"
+    <NuxtPicture
+      format="avif,webp"
+      class="mt-10 block w-full"
+      :img-attrs="{
+        class: 'aspect-[1.5] w-full rounded-[0.9375rem] object-cover',
+        style: { viewTransitionName: `project-${project.key}` },
+        fetchpriority: 'high',
+      }"
       :src="project.cover"
       :alt="project.title"
-      :style="{ viewTransitionName: `project-${project.key}` }"
       width="1800"
       height="1348"
-      fetchpriority="high"
+      sizes="320:100vw 480:100vw 639:100vw sm:662px"
+      densities="x1 x2"
     />
     <div class="my-12">
       <p class="text-muted mb-5 text-[13px]">Ideation &amp; Conceptual</p>
@@ -52,15 +58,19 @@ useSeoMeta({
       <p class="text-muted max-w-150 text-sm leading-[1.65]">{{ project.conceptText }}</p>
     </div>
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-      <img
+      <NuxtPicture
+        format="avif,webp"
         v-for="(image, index) in project.detailImages"
         :key="image"
-        class="aspect-[1.15] w-full rounded-[15px] object-cover"
+        class="block w-full"
+        :img-attrs="{ class: 'aspect-[1.15] w-full rounded-[0.9375rem] object-cover' }"
         :src="image"
         :alt="`${project.title} visual ${index + 2}`"
         loading="lazy"
         width="1800"
         height="1348"
+        sizes="320:100vw 480:100vw 639:100vw sm:325px"
+        densities="x1 x2"
       />
     </div>
     <div class="my-12">

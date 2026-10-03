@@ -47,12 +47,16 @@ const testimonials = [
         class="min-h-52.5 rounded-2xl bg-white p-5.5"
       >
         <div class="flex items-center gap-2.5">
-          <img
-            class="size-10.5 rounded-full object-cover"
+          <NuxtPicture
+            format="avif,webp"
+            class="block size-10.5 shrink-0"
+            :img-attrs="{ class: 'size-full rounded-full object-cover' }"
             :src="person.avatar"
             alt=""
             width="44"
             height="44"
+            sizes="42px"
+            densities="x1 x2"
             loading="lazy"
           />
           <div class="grid gap-0.75">

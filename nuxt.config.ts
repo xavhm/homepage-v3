@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/hints', '@nuxtjs/seo', 'nuxt-security'],
+  modules: ['@nuxt/ui', '@nuxt/image', '@nuxt/hints', '@nuxtjs/seo', 'nuxt-security'],
 
   devtools: {
     enabled: true,
