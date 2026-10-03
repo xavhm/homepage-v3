@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const faqs = [
   {
-    question: 'What kinds of roles are you considering?',
+    question: 'What kind of roles are you considering?',
     answer:
       'Senior Frontend Engineer and Product Engineer roles with meaningful input into technical and product decisions. I’m especially interested in teams building AI-powered products.',
   },
@@ -13,7 +13,7 @@ const faqs = [
   {
     question: 'What is your main technical focus?',
     answer:
-      'TypeScript and frontend architecture, with production experience in Vue.js, Nuxt, React, Web Components, accessibility, performance, and automated testing.',
+      'TypeScript and frontend architecture, with production experience in Vue.js, Nuxt, React, Web Components, accessibility, performance, and automated testing. AI agentic systems powered by LangChain and LangGraph.',
   },
 ]
 </script>

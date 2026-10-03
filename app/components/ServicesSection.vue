@@ -12,13 +12,13 @@ const expertise = [
   },
   {
     number: '03',
-    title: 'Web quality',
-    detail: 'Accessibility, Core Web Vitals, Vitest, Playwright',
+    title: 'Web performance',
+    detail: 'Optimization for accessibility, Core Web Vitals. Testing with Vitest, Playwright',
   },
   {
     number: '04',
-    title: 'AI-powered interfaces',
-    detail: 'User interfaces and component systems for classification features',
+    title: 'AI-powered workflows',
+    detail: 'AI-assisted engineering. User interfaces and component systems for AI agentic systems',
   },
 ]
 </script>
@@ -29,7 +29,7 @@ const expertise = [
     class="border-surface bg-surface scroll-mt-22.75 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
   >
     <SectionHeading
-      title="What I bring to a product team"
+      title="What I bring to a team"
       description="Hands-on frontend ownership, grounded in product operations and delivery."
     />
     <ul role="list" class="grid grid-cols-1 gap-4.5 sm:grid-cols-2 sm:gap-2.5">

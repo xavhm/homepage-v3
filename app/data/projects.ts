@@ -23,9 +23,9 @@ export const projects: PortfolioProject[] = [
     description:
       'A TypeScript and Vue 3 e-commerce product used by more than ten tourism destinations, with interfaces that can also be embedded in third-party sites.',
     contextTitle:
-      'Booking journeys need to work across destination websites and back-office workflows.',
+      'Booking activites and journeys across destination websites, with back-office workflows.',
     contextText:
-      'Youbook serves tourism destinations with a web application and components that can be integrated into WordPress and other sites. Marseille Tourism was its principal launch client.',
+      'Youbook serves tourism destinations with a web application and web components that can be integrated into WordPress and other sites. Marseille Tourism was its principal launch client.',
     contributionTitle: 'I have owned the frontend direction since the product’s inception.',
     contributionText:
       'I built the Vue 3 and TypeScript frontend and native Web Components, shaped component and technology choices, and worked with backend engineers on API contracts. My responsibilities also include accessibility, performance, tests, and documentation.',
@@ -70,12 +70,12 @@ export const projects: PortfolioProject[] = [
   {
     slug: 'fairguest-review-platform',
     key: 'fairguest',
-    category: 'Tourism · Review aggregation',
+    category: 'Tourism · Online reputation',
     title: 'Fairguest — bringing tourism reviews together',
     cardLabel: 'Fairguest: frontend development for a tourism review platform',
     description:
       'Frontend work on a tourism product used by more than 50 destinations and aggregating reviews from more than 20 platforms.',
-    contextTitle: 'Review data from many sources needs a clear interface.',
+    contextTitle: 'Reviewing data from many sources needs a clear interface.',
     contextText:
       'Fairguest brings together information from more than 20 review platforms for tourism destinations. The product serves more than 50 destinations and has continued to evolve as a production application.',
     contributionTitle: 'I developed features and improved the frontend foundation.',

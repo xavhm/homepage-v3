@@ -18,7 +18,7 @@ export const experienceGroups: { title: string; entries: ExperienceEntry[] }[] =
         position: 'Frontend Developer — Frontend Technical Owner',
         organization: 'Raccourci Agency',
         description:
-          "Own frontend technical direction for TypeScript and Vue.js applications, including architecture, technology selection, component strategy, accessibility, performance, testing, and documentation. Built Youbook's frontend and embeddable Web Components from inception, delivered an internal ERP for catalogue and invoicing workflows, and developed interfaces for AI-powered classification. Collaborate with backend engineers on API contracts and backlog priorities.",
+          "Own frontend technical direction for TypeScript and Vue.js applications, including architecture, technology selection, component strategy, accessibility, performance, testing, and documentation. Built Youbook's frontend and embeddable Web Components from product inception, delivered an internal ERP for catalogue and invoicing workflows, and developed interfaces for AI-powered features. Collaborate with backend engineers on API contracts and backlog priorities.",
       },
       {
         startDate: '2010-07',
@@ -27,7 +27,7 @@ export const experienceGroups: { title: string; entries: ExperienceEntry[] }[] =
         position: 'Live Operations Manager',
         organization: 'Winamax',
         description:
-          'Managed planning and live operations for online poker games, promotions, and events, including prize pools and liquidity. Analyzed product performance, ran A/B tests, designed engagement mechanics, and coordinated product, engineering, analytics, marketing, creative, and support teams.',
+          'Managed planning and live operations for online poker games, promotions, and events, including prize pools and liquidity. Analyzed product performance, ran A/B tests, designed engagement mechanics. Worked in collaboration with product, engineering, analytics, marketing, creative, and support teams.',
       },
       {
         startDate: '2009-08',

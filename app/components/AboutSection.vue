@@ -3,21 +3,20 @@
     id="about"
     class="scroll-mt-22.75 overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
   >
-    <h2 class="text-muted mb-5.5 text-[13px] font-normal">About</h2>
-    <p class="text-muted max-w-152.5 text-[17px] leading-[1.48] tracking-[-0.04em]">
+    <h2 class="text-muted mb-5.5 text-sm font-normal">About</h2>
+    <p class="text-muted max-w-152.5 text-base leading-[1.48] tracking-[-0.04em]">
       <strong class="text-ink font-medium"
         >I’m Xavier, a frontend engineer and technical owner based in La Rochelle.</strong
       >
-      At Raccourci Agency, I shape frontend architecture and build TypeScript and Vue.js
-      applications for tourism teams. I work across reusable components, accessibility, performance,
-      testing, API contracts, and product decisions.
+      At Raccourci Agency, I design frontend architecture and build TypeScript and Vue.js
+      applications for the tourism industry, with a focus on reusable components, accessibility,
+      performance, testing, API contracts, and product decision-making.
     </p>
-    <p class="text-muted mt-5 max-w-152.5 text-sm leading-relaxed">
-      My earlier decade at Winamax taught me to weigh user behavior, operational constraints, and
-      commercial outcomes alongside the code. I’m interested in roles where I can help shape both
-      the product and its technical direction, including AI-powered experiences. My applied AI work
-      includes interfaces for classification features; I’m continuing to develop my expertise in
-      agentic systems and UX.
+    <p class="text-muted mt-5 max-w-152.5 text-base leading-relaxed">
+      During my decade at Winamax, I learned to balance user behavior, operational constraints, and
+      commercial outcomes with technical quality. I’m drawn to roles where I can help shape both the
+      product and its technical direction, particularly around AI-powered experiences. Alongside
+      AI-assisted engineering, I’m continuing to deepen my expertise in agentic systems and UX.
     </p>
     <div class="mt-7.25 flex flex-wrap items-center gap-2.5">
       <CopyButton
@@ -44,15 +43,11 @@
     <div class="grid grid-cols-1 gap-x-5 gap-y-6.5 pt-10 sm:grid-cols-3 sm:pt-11.25">
       <div class="grid gap-2">
         <strong class="text-[25px] font-medium tracking-[-0.06em]">Nearly 5 years</strong
-        ><span class="text-muted text-[11px]">Building production web applications</span>
+        ><span class="text-muted text-[12px]">Building production web applications</span>
       </div>
       <div class="grid gap-2">
         <strong class="text-[25px] font-medium tracking-[-0.06em]">10 years</strong
-        ><span class="text-muted text-[11px]">In product operations at Winamax</span>
-      </div>
-      <div class="grid gap-2">
-        <strong class="text-[25px] font-medium tracking-[-0.06em]">10+ destinations</strong
-        ><span class="text-muted text-[11px]">Use the Youbook product</span>
+        ><span class="text-muted text-[12px]">In product operations at Winamax</span>
       </div>
     </div>
   </section>

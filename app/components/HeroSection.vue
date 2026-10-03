@@ -73,13 +73,13 @@ const technologies = [
     <h1
       class="mb-3.5 max-w-130 text-[clamp(1.7rem,1.4rem+1vw,1.75rem)] leading-[1.12] font-normal tracking-[-0.058em] text-balance"
     >
-      I build web products with engineering depth and product judgment.
+      I build digital experiences with engineering depth and product judgment.
       <span class="inline-block rotate-12">👾</span>
     </h1>
     <p class="max-w-137.5 text-sm leading-[1.65] tracking-tight text-[#5e5e62] sm:text-[15px]">
       I lead frontend architecture and delivery for production applications. Before engineering, I
-      spent ten years in product operations, so I connect technical decisions to user needs and
-      business constraints.
+      spent ten years in product operations, helping me connect technical decisions to user needs
+      and business constraints.
     </p>
     <div class="mt-6.5 flex flex-wrap gap-2.5">
       <a
