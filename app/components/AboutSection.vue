@@ -34,10 +34,12 @@
       <a
         class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
         href="/XavierHernandez_FrontendEng_Resume.pdf"
-        download
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View CV (PDF, opens in a new tab)"
       >
-        <UIcon name="i-lucide-download" class="size-4 shrink-0" aria-hidden="true" />
-        Download CV
+        <UIcon name="i-lucide-external-link" class="size-4 shrink-0" aria-hidden="true" />
+        View CV
       </a>
     </div>
     <div class="grid grid-cols-1 gap-x-5 gap-y-6.5 pt-10 sm:grid-cols-3 sm:pt-11.25">

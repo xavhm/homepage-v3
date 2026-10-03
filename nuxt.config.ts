@@ -14,7 +14,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   app: {
-    head: { titleTemplate: '%s' },
+    head: {
+      titleTemplate: '%s',
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    },
   },
 
   experimental: {
