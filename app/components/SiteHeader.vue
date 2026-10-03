@@ -3,7 +3,7 @@ const nav = [
   { label: 'Home', to: '/#hero' },
   { label: 'About', to: '/#about' },
   { label: 'Projects', to: '/#projects' },
-  { label: 'Services', to: '/#services' },
+  { label: 'Expertise', to: '/#services' },
   { label: 'Contact', to: '/#contact' },
 ]
 

@@ -1,4 +1,15 @@
 <script setup lang="ts">
+const roles = ['Frontend Engineer', 'Product Engineer', 'Frontend Technical Owner']
+const activeRole = ref(0)
+let roleTimer: ReturnType<typeof setInterval> | undefined
+
+onMounted(() => {
+  roleTimer = setInterval(() => {
+    activeRole.value = (activeRole.value + 1) % roles.length
+  }, 3000)
+})
+onUnmounted(() => clearInterval(roleTimer))
+
 const technologies = [
   { name: 'CSS', icon: 'i-simple-icons-css' },
   { name: 'TypeScript', icon: 'i-simple-icons-typescript' },
@@ -23,12 +34,12 @@ const technologies = [
     class="border-surface relative scroll-mt-20.75 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
-      class="absolute top-4 right-4 flex items-center gap-2 rounded-full bg-[#ebf9e7] px-3 py-1.75 text-[11px] whitespace-nowrap text-[#3f6c38] sm:top-4.5 sm:right-5"
+      class="mb-6 flex w-fit max-w-full items-center gap-2 rounded-2xl bg-[#ebf9e7] px-3 py-1.75 text-xs leading-relaxed text-[#3f6c38] sm:ml-auto sm:rounded-full"
     >
       <span
-        class="size-1.75 rounded-full bg-[#51af3e] motion-safe:animate-pulse"
+        class="size-1.75 shrink-0 rounded-full bg-[#51af3e] motion-safe:animate-pulse"
         aria-hidden="true"
-      />Open for 2 new projects
+      />Open to senior frontend and product engineering roles
     </div>
     <div class="mb-6 flex items-center gap-4.75 sm:mb-7.5">
       <NuxtPicture
@@ -43,19 +54,32 @@ const technologies = [
         densities="x1 x2"
       />
       <div>
-        <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Calib Harrison</p>
-        <p class="text-muted text-sm">Product Designer</p>
+        <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Xavier Hernandez-Martinez</p>
+        <div class="text-muted flex items-center gap-2 text-sm">
+          <p class="sr-only">{{ roles.join(', ') }}</p>
+          <p aria-hidden="true" class="motion-safe:hidden">{{ roles[0] }}</p>
+          <div aria-hidden="true" class="hidden overflow-hidden motion-safe:grid">
+            <span
+              v-for="(role, index) in roles"
+              :key="role"
+              class="col-start-1 row-start-1 transition-transform duration-300 motion-reduce:transition-none"
+              :class="index === activeRole ? 'translate-y-0' : 'translate-y-11'"
+              >{{ role }}</span
+            >
+          </div>
+        </div>
       </div>
     </div>
     <h1
       class="mb-3.5 max-w-130 text-[clamp(1.7rem,1.4rem+1vw,1.75rem)] leading-[1.12] font-normal tracking-[-0.058em] text-balance"
     >
-      I design premium, high-converting digital experiences that drive growth.
+      I build web products with engineering depth and product judgment.
       <span class="inline-block rotate-12">👾</span>
     </h1>
     <p class="max-w-137.5 text-sm leading-[1.65] tracking-tight text-[#5e5e62] sm:text-[15px]">
-      Helping brands grow through thoughtful design and user experiences that drive engagement,
-      build trust, and deliver results.
+      I lead frontend architecture and delivery for production applications. Before engineering, I
+      spent ten years in product operations, so I connect technical decisions to user needs and
+      business constraints.
     </p>
     <div class="mt-6.5 flex flex-wrap gap-2.5">
       <a
@@ -66,7 +90,7 @@ const technologies = [
       <a
         class="border-line text-ink focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="#projects"
-        >See my Projects</a
+        >Explore my work</a
       >
     </div>
     <div class="mt-12 sm:mt-13">

@@ -2,92 +2,86 @@ export interface PortfolioProject {
   slug: string
   key: string
   category: string
-  dates: string
   title: string
+  cardLabel: string
   description: string
   cover: string
   detailImages: [string, string]
-  conceptTitle: string
-  conceptText: string
-  executionTitle: string
-  executionText: string
+  contextTitle: string
+  contextText: string
+  contributionTitle: string
+  contributionText: string
 }
 
 export const projects: PortfolioProject[] = [
   {
-    slug: 'orbit-saas-brand-experience',
-    key: 'orbit',
-    category: 'Branding',
-    dates: 'Feb 1st – Mar 10th',
-    title: 'Orbit - SaaS Brand Experience',
+    slug: 'youbook-tourism-commerce',
+    key: 'youbook',
+    category: 'E-commerce · Frontend architecture',
+    title: 'Youbook — e-commerce for tourism destinations',
+    cardLabel: 'Youbook: e-commerce frontend and embeddable Web Components',
     description:
-      'Orbit was created as a brand identity project focused on crafting bold and cohesive visual assets across digital and physical touchpoints.',
+      'A TypeScript and Vue 3 e-commerce product used by more than ten tourism destinations, with interfaces that can also be embedded in third-party sites.',
+    contextTitle:
+      'Booking journeys need to work across destination websites and back-office workflows.',
+    contextText:
+      'Youbook serves tourism destinations with a web application and components that can be integrated into WordPress and other sites. Marseille Tourism was its principal launch client.',
+    contributionTitle: 'I have owned the frontend direction since the product’s inception.',
+    contributionText:
+      'I built the Vue 3 and TypeScript frontend and native Web Components, shaped component and technology choices, and worked with backend engineers on API contracts. My responsibilities also include accessibility, performance, tests, and documentation.',
     cover: '/portfolio/orbit-cover.avif',
     detailImages: ['/portfolio/orbit-detail-1.avif', '/portfolio/orbit-detail-2.avif'],
-    conceptTitle:
-      'Petronex was imagined as a visual system that brings consistency and impact to modern brand communication.',
-    conceptText:
-      'The goal was to design a strong and flexible identity that works across multiple mediums, from logos to large-scale billboards. The concept focused on clarity, bold typography, and a balanced visual language to ensure strong brand recognition.',
-    executionTitle:
-      'The design approach for Astra combined bold visuals with a structured and scalable system.',
-    executionText:
-      'A cohesive set of brand assets was developed, including logo variations, color systems, and layout guidelines. Each element was designed to maintain consistency across print and digital formats, ensuring adaptability for campaigns and real-world applications.',
   },
   {
-    slug: 'nova-brand-identity',
-    key: 'nova',
-    category: 'Food & Beverage',
-    dates: 'Jan 20th – Feb 25th',
-    title: 'Nova™ Brand Identity',
+    slug: 'internal-erp-workflows',
+    key: 'internal-erp',
+    category: 'Internal tools · Product engineering',
+    title: 'Internal ERP — catalogue and invoicing workflows',
+    cardLabel: 'Internal ERP: catalogue and invoicing workflows',
     description:
-      'Nova™ was crafted as a modern logo and visual identity system designed to strengthen brand recognition while creating a memorable and consistent presence across digital and print applications.',
+      'An internal product that brings Raccourci’s catalogue of products and services together with invoice-generation workflows for commercial teams.',
+    contextTitle: 'Commercial teams needed a clearer path from product catalogue to invoice.',
+    contextText:
+      'The project brought business information and invoicing tasks into one internal system.',
+    contributionTitle: 'I designed and delivered the product independently.',
+    contributionText:
+      'I translated the commercial workflow into an application, built the interfaces, and made the technical decisions needed for delivery.',
     cover: '/portfolio/nova-cover.avif',
     detailImages: ['/portfolio/nova-detail-1.avif', '/portfolio/nova-detail-2.avif'],
-    conceptTitle:
-      'The identity was envisioned to create a distinctive and recognizable brand presence across every customer touchpoint.',
-    conceptText:
-      "The identity was developed to communicate clarity, innovation, and trust through a simple yet distinctive visual language. The goal was to create a timeless logo that scales effortlessly across different touchpoints while reflecting the brand's personality and values.",
-    executionTitle:
-      'The design approach combined strategic thinking with a refined visual identity system.',
-    executionText:
-      'The design process combined strategic thinking with refined visual exploration. Multiple logo concepts, typography systems, and color palettes were evaluated before developing a cohesive identity. The final brand system includes logo variations, spacing guidelines, iconography, and supporting visual elements to ensure consistency across all brand materials.',
   },
   {
-    slug: 'finova-finance-app',
-    key: 'finova',
-    category: 'FinTech / Personal Finance',
-    dates: 'Jan 10th – Mar 2nd',
-    title: 'Finova Finance App',
+    slug: 'roadbook-tourism-platform',
+    key: 'roadbook',
+    category: 'Tourism · Frontend development',
+    title: 'RoadBOOK — evolving an established tourism platform',
+    cardLabel: 'RoadBOOK: frontend development for a tourism platform',
     description:
-      'Finova Finance App was designed as a modern financial platform that simplifies money management through a clean and structured interface.',
+      'Frontend feature work and modernization for a production application used by more than 100 tourism destinations.',
+    contextTitle:
+      'An established product has to keep serving destinations as its frontend evolves.',
+    contextText:
+      'RoadBOOK is a production application used by more than 100 tourism destinations. Its existing interface needed ongoing feature development and a move toward a more maintainable frontend.',
+    contributionTitle: 'I contributed features and helped modernize the frontend.',
+    contributionText:
+      'I built frontend features, worked on the transition from Vue 2 to Vue 3 and TypeScript, and helped improve interface consistency through reusable, accessible components.',
     cover: '/portfolio/finova-cover.avif',
     detailImages: ['/portfolio/finova-detail-1.avif', '/portfolio/finova-detail-2.avif'],
-    conceptTitle:
-      'Velto was imagined as a finance product focused on simplifying how users interact with financial data.',
-    conceptText:
-      'The vision was to design a platform that feels intuitive and reliable, helping users track spending and manage finances without friction. Inspired by minimal design principles, the system focuses on clarity, balance, and usability while turning complex data into simple insights.',
-    executionTitle:
-      'The design approach for Velto combined minimalism with structured data presentation.',
-    executionText:
-      'A clean and consistent UI system was developed with modular components and flexible layouts. A neutral color palette with subtle highlights was used to guide attention, while dashboards and charts were designed to present financial data in a clear and accessible way.',
   },
   {
-    slug: 'lunex-website-redesign',
-    key: 'lunex',
-    category: 'Technology',
-    dates: 'Mar 1st – Apr 12th',
-    title: 'Lunex Website Redesign',
+    slug: 'fairguest-review-platform',
+    key: 'fairguest',
+    category: 'Tourism · Review aggregation',
+    title: 'Fairguest — bringing tourism reviews together',
+    cardLabel: 'Fairguest: frontend development for a tourism review platform',
     description:
-      'Lunex Website Redesign focused on improving usability and visual clarity through a modern and structured web experience.',
+      'Frontend work on a tourism product used by more than 50 destinations and aggregating reviews from more than 20 platforms.',
+    contextTitle: 'Review data from many sources needs a clear interface.',
+    contextText:
+      'Fairguest brings together information from more than 20 review platforms for tourism destinations. The product serves more than 50 destinations and has continued to evolve as a production application.',
+    contributionTitle: 'I developed features and improved the frontend foundation.',
+    contributionText:
+      'I contributed frontend features, interface refactoring, and reusable, accessible components as part of the move from Vue 2 toward Vue 3 and TypeScript.',
     cover: '/portfolio/lunex-cover.avif',
     detailImages: ['/portfolio/lunex-detail-1.avif', '/portfolio/lunex-detail-2.avif'],
-    conceptTitle:
-      'Fasonex was reimagined as a cleaner and more intuitive platform built around user-focused navigation.',
-    conceptText:
-      'The goal was to simplify the browsing experience while enhancing visual hierarchy and content structure. The concept focused on clear layouts, improved content flow, and a modern interface to help users find information faster and interact with ease.',
-    executionTitle:
-      'The redesign approach focused on structure, consistency, and improved interaction design.',
-    executionText:
-      'A refreshed UI system was developed with scalable components and responsive layouts. Typography, spacing, and visual hierarchy were refined to improve readability, while interactions were optimized to create a smoother and more engaging user experience across devices.',
   },
 ]

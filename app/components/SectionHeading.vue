@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ title: string; description: string }>()
+defineProps<{ title: string; description?: string }>()
 </script>
 
 <template>
@@ -9,7 +9,7 @@ defineProps<{ title: string; description: string }>()
     >
       {{ title }}
     </h2>
-    <p class="text-muted text-[13px] leading-normal">
+    <p v-if="description" class="text-muted text-[13px] leading-normal">
       {{ description }}
     </p>
   </div>

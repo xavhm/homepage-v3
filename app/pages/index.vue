@@ -12,7 +12,6 @@ useSeoMeta({
     <ExperienceSection />
     <ProjectsSection />
     <ServicesSection />
-    <TestimonialsSection />
     <FaqSection />
     <ContactSection />
   </div>

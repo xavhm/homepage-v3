@@ -1,24 +1,19 @@
 <script setup lang="ts">
 const faqs = [
   {
-    question: 'What services do you offer?',
+    question: 'What kinds of roles are you considering?',
     answer:
-      'I provide product design, UI/UX design, website design, design systems, Framer development, and end-to-end digital product design services.',
+      'Senior Frontend Engineer and Product Engineer roles with meaningful input into technical and product decisions. I’m especially interested in teams building AI-powered products.',
   },
   {
-    question: 'Do you design and develop websites?',
+    question: 'Where are you based?',
     answer:
-      'Yes. I handle both the design and development process, creating high-converting websites using Framer and modern web technologies.',
+      'I’m based in La Rochelle, France, and open to remote or hybrid opportunities in France and the EU, including English-speaking teams.',
   },
   {
-    question: 'Can you redesign an existing product or website?',
+    question: 'What is your main technical focus?',
     answer:
-      'Absolutely. I can audit your current experience, identify opportunities, and redesign it to improve usability, conversions, and visual appeal.',
-  },
-  {
-    question: 'Do you build websites in Framer?',
-    answer:
-      'Yes. I specialize in Framer development and create fast, responsive, and SEO-friendly websites that are easy to manage.',
+      'TypeScript and frontend architecture, with production experience in Vue.js, Nuxt, React, Web Components, accessibility, performance, and automated testing.',
   },
 ]
 </script>
@@ -28,10 +23,7 @@ const faqs = [
     id="faq"
     class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
   >
-    <SectionHeading
-      title="Frequently Asked Questions"
-      description="Everything you need to know before we work together."
-    />
+    <SectionHeading title="A few useful details" />
     <div class="grid gap-2">
       <details
         v-for="(faq, index) in faqs"
