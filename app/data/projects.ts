@@ -29,8 +29,8 @@ export const projects: PortfolioProject[] = [
     contributionTitle: 'I have owned the frontend direction since the product’s inception.',
     contributionText:
       'I built the Vue 3 and TypeScript frontend and native Web Components, shaped component and technology choices, and worked with backend engineers on API contracts. My responsibilities also include accessibility, performance, tests, and documentation.',
-    cover: '/portfolio/orbit-cover.avif',
-    detailImages: ['/portfolio/orbit-detail-1.avif', '/portfolio/orbit-detail-2.avif'],
+    cover: '/portfolio/youbook1.jpg',
+    detailImages: ['/portfolio/youbook2.jpg', '/portfolio/youbook3.jpg'],
   },
   {
     slug: 'internal-erp-workflows',
@@ -46,8 +46,8 @@ export const projects: PortfolioProject[] = [
     contributionTitle: 'I designed and delivered the product independently.',
     contributionText:
       'I translated the commercial workflow into an application, built the interfaces, and made the technical decisions needed for delivery.',
-    cover: '/portfolio/nova-cover.avif',
-    detailImages: ['/portfolio/nova-detail-1.avif', '/portfolio/nova-detail-2.avif'],
+    cover: '/portfolio/erp_1.jpg',
+    detailImages: ['/portfolio/erp_2.jpg', '/portfolio/erp_3.jpg'],
   },
   {
     slug: 'roadbook-tourism-platform',
@@ -64,8 +64,8 @@ export const projects: PortfolioProject[] = [
     contributionTitle: 'I contributed features and helped modernize the frontend.',
     contributionText:
       'I built frontend features, worked on the transition from Vue 2 to Vue 3 and TypeScript, and helped improve interface consistency through reusable, accessible components.',
-    cover: '/portfolio/finova-cover.avif',
-    detailImages: ['/portfolio/finova-detail-1.avif', '/portfolio/finova-detail-2.avif'],
+    cover: '/portfolio/roadbook_1.jpg',
+    detailImages: ['/portfolio/roadbook_2.jpg', '/portfolio/roadbook_3.jpg'],
   },
   {
     slug: 'fairguest-review-platform',
@@ -81,7 +81,7 @@ export const projects: PortfolioProject[] = [
     contributionTitle: 'I developed features and improved the frontend foundation.',
     contributionText:
       'I contributed frontend features, interface refactoring, and reusable, accessible components as part of the move from Vue 2 toward Vue 3 and TypeScript.',
-    cover: '/portfolio/lunex-cover.avif',
-    detailImages: ['/portfolio/lunex-detail-1.avif', '/portfolio/lunex-detail-2.avif'],
+    cover: '/portfolio/fairguest_1.jpg',
+    detailImages: ['/portfolio/fairguest_2.jpg', '/portfolio/fairguest_3.jpg'],
   },
 ]

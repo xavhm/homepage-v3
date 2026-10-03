@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Calib Harrison — Product Designer',
-  description: 'I design premium, high-converting digital experiences that drive growth.',
+  title: 'Xavier Hernandez — Senior Frontend & Product Engineer',
+  description: 'I design premium, high-converting web applications and digital experiences.',
 })
 </script>
 

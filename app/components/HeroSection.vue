@@ -34,22 +34,22 @@ const technologies = [
     class="border-surface relative scroll-mt-20.75 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
-      class="mb-6 flex w-fit max-w-full items-center gap-2 rounded-2xl bg-[#ebf9e7] px-3 py-1.75 text-xs leading-relaxed text-[#3f6c38] sm:ml-auto sm:rounded-full"
+      class="mb-6 flex w-fit max-w-full items-center gap-2 rounded-2xl bg-[#ebf9e7] px-3 py-1.75 text-xs leading-relaxed text-[#3f6c38] sm:mb-0 sm:ml-auto sm:rounded-full"
     >
       <span
         class="size-1.75 shrink-0 rounded-full bg-[#51af3e] motion-safe:animate-pulse"
         aria-hidden="true"
-      />Open to senior frontend and product engineering roles
+      />Open to new opportunities
     </div>
     <div class="mb-6 flex items-center gap-4.75 sm:mb-7.5">
       <NuxtPicture
         format="avif,webp"
         class="block size-17 shrink-0 sm:size-21.5"
         :img-attrs="{ class: 'size-full rounded-full object-cover', fetchpriority: 'high' }"
-        src="/portfolio/profile.avif"
+        src="/portfolio/profile.jpg"
         width="86"
         height="86"
-        alt="Calib Harrison"
+        alt="Xavier Hernandez"
         sizes="68px sm:86px"
         densities="x1 x2"
       />

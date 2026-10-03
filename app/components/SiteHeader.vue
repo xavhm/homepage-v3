@@ -61,7 +61,7 @@ onUnmounted(() => {
       /></a> -->
       <a
         class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="https://linkedin.com/"
+        href="https://linkedin.com/in/xavhm"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
@@ -69,7 +69,7 @@ onUnmounted(() => {
       /></a>
       <a
         class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
-        href="https://github.com/"
+        href="https://github.com/xavhm"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
