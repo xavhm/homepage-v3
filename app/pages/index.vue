@@ -1,8 +1,10 @@
 <script setup lang="ts">
-useSeoMeta({
-  title: 'Xavier Hernandez — Senior Frontend & Product Engineer',
-  description: 'I design premium, high-converting web applications and digital experiences.',
-})
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'ProfilePage',
+    mainEntity: { '@id': '#identity' },
+  }),
+])
 </script>
 
 <template>

@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import { projects } from '~/data/projects'
+import { portfolioSeo } from '~/data/seo'
 
 const route = useRoute()
 const project = computed(() => projects.find((item) => item.slug === route.params.slug))
 if (!project.value) throw createError({ statusCode: 404, statusMessage: 'Project not found' })
 
+const title = computed(() => `${project.value?.title} — ${portfolioSeo.name}`)
+
 useSeoMeta({
-  title: () => `${project.value?.title} — Xavier Hernandez-Martinez`,
+  title,
   description: () => project.value?.description,
+  ogTitle: title,
+  ogDescription: () => project.value?.description,
+  twitterTitle: title,
+  twitterDescription: () => project.value?.description,
 })
 </script>
 

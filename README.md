@@ -81,6 +81,20 @@ vp run preview
 
 The generated Nuxt output is written to `.output/`. Refer to the [Nuxt deployment guide](https://nuxt.com/docs/getting-started/deployment) for provider-specific instructions.
 
+### SEO and Cloudflare
+
+The canonical production URL is `https://www.xavhm.foo`. Override it with `NUXT_SITE_URL` when needed; `.env.example` documents the build variables. Set `NUXT_SITE_ENV=staging` **before building** Cloudflare preview deployments so their prerendered HTML and robots file disable indexing. Production builds use `NUXT_SITE_ENV=production` (the default).
+
+Nuxt SEO generates `/robots.txt`, `/sitemap.xml`, canonical URLs, social metadata, and Schema.org JSON-LD. The sitemap includes the homepage and every project in `app/data/projects.ts`. All these pages are prerendered explicitly. The sitemap and OG images use zero runtime mode and are regenerated when you build; rebuild after changing projects or SEO content.
+
+Shared portfolio metadata lives in `app/data/seo.ts`; case studies use their own titles and descriptions. The homepage is a `ProfilePage` linked to the site-wide `Person` identity, including the portrait and existing social profiles.
+
+The shared 1200 × 630 PNG placeholder is generated from `app/components/OgImage/Portfolio.takumi.vue` and registered in `app/app.vue`. Edit that template for the final design. The Takumi native renderer runs during the build, and generated images are served as static assets on Cloudflare. The build needs network access to resolve the Inter font.
+
+Choose the Nitro preset for your Cloudflare deployment: `cloudflare_module` for Workers, or `cloudflare_pages` for Pages. Configure `www.xavhm.foo` as the production custom domain, and redirect `xavhm.foo` to `https://www.xavhm.foo` to keep one canonical origin. After deployment, verify `/robots.txt` and `/sitemap.xml` on the live domain and submit the sitemap in Google Search Console.
+
+Configuration follows the [Nuxt SEO setup guide](https://nuxtseo.com/docs/nuxt-seo/guides/using-the-modules), [OG image zero runtime guidance](https://nuxtseo.com/docs/og-image/guides/zero-runtime), and [identity setup guidance](https://nuxtseo.com/docs/schema-org/guides/setup-identity).
+
 ## License
 
 Released under the [MIT License](./LICENSE).
