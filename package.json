@@ -40,7 +40,8 @@
     "typescript": "^6.0.3",
     "vite-plus": "0.3.3",
     "vitest": "4.1.11",
-    "vue-tsc": "^3.3.11"
+    "vue-tsc": "^3.3.11",
+    "wrangler": "^4.147.0"
   },
   "packageManager": "pnpm@12.4.1"
 }

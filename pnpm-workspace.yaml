@@ -5,6 +5,7 @@ allowBuilds:
   sharp: true
   unrs-resolver: false
   vue-demi: false
+  workerd: set this to true or false
 overrides:
   vite: npm:@voidzero-dev/vite-plus-core@0.3.3
   vitest: 4.1.11
