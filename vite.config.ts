@@ -26,6 +26,7 @@ export default defineConfig({
       '.codex/**',
       '.nuxt/**',
       '.vscode/**',
+      'public/**',
       '.mcp.json',
       'AGENTS.md',
       'README.md',
@@ -49,6 +50,14 @@ export default defineConfig({
       typeAware: true,
       typeCheck: true,
     },
-    ignorePatterns: ['dist/**', '.agents/**', '.codex/**', '.nuxt/**', '.data/**', '.github/**'],
+    ignorePatterns: [
+      'dist/**',
+      '.agents/**',
+      '.codex/**',
+      '.nuxt/**',
+      '.data/**',
+      '.github/**',
+      'public/**',
+    ],
   },
 })
