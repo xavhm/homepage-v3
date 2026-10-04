@@ -33,7 +33,7 @@
       />
       <a
         class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
-        href="/XavierHernandez_FrontendEng_Resume.pdf"
+        href="/xavier-hernandez-frontend-eng-resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="View CV (PDF, opens in a new tab)"
