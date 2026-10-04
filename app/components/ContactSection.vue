@@ -27,7 +27,7 @@ function sendMessage() {
           >
           <input
             id="contact-name"
-            class="text-ink focus-visible:outline-ink w-full rounded-[10px] border border-[#85858a] bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
+            class="text-ink focus-visible:outline-ink border-muted w-full rounded-[10px] border bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
             v-model="name"
             name="name"
             autocomplete="name"
@@ -40,7 +40,7 @@ function sendMessage() {
           >
           <input
             id="contact-email"
-            class="text-ink focus-visible:outline-ink w-full rounded-[10px] border border-[#85858a] bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
+            class="text-ink focus-visible:outline-ink border-muted w-full rounded-[10px] border bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
             v-model="email"
             name="email"
             type="email"
@@ -55,7 +55,7 @@ function sendMessage() {
         >
         <textarea
           id="contact-message"
-          class="text-ink focus-visible:outline-ink min-h-33.75 w-full resize-y rounded-[10px] border border-[#85858a] bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
+          class="text-ink focus-visible:outline-ink border-muted min-h-33.75 w-full resize-y rounded-[10px] border bg-white px-4 py-3.5 text-[13px] focus-visible:outline-2 focus-visible:outline-offset-2"
           v-model="message"
           name="message"
           rows="5"
