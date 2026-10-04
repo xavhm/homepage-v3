@@ -44,7 +44,7 @@
     </div>
     <div class="grid grid-cols-1 gap-x-5 gap-y-6.5 pt-10 sm:grid-cols-3 sm:pt-11.25">
       <div class="grid gap-2">
-        <strong class="text-[25px] font-medium tracking-[-0.06em]">Nearly 5 years</strong
+        <strong class="text-[25px] font-medium tracking-[-0.06em]">5 years</strong
         ><span class="text-muted text-[12px]">Building production web applications</span>
       </div>
       <div class="grid gap-2">

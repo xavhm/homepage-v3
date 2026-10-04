@@ -89,7 +89,9 @@ Nuxt SEO generates `/robots.txt`, `/sitemap.xml`, canonical URLs, social metadat
 
 Shared portfolio metadata lives in `app/data/seo.ts`; case studies use their own titles and descriptions. The homepage is a `ProfilePage` linked to the site-wide `Person` identity, including the portrait and existing social profiles.
 
-The shared 1200 × 630 PNG placeholder is generated from `app/components/OgImage/Portfolio.takumi.vue` and registered in `app/app.vue`. Edit that template for the final design. The Takumi native renderer runs during the build, and generated images are served as static assets on Cloudflare. The build needs network access to resolve the Inter font.
+The shared 1200 × 630 PNG image is generated from `app/components/OgImage/Portfolio.takumi.vue` and registered in `app/app.vue`. Edit that template to change the design. The Takumi native renderer runs during the build, and generated images are served as static assets on Cloudflare.
+
+The site and OG image use self-hosted Inter 4.1 variable fonts from `public/fonts/`, including normal and italic weights from 100 to 900. `@nuxt/fonts` registers both local files globally so the browser and Takumi renderer use the same assets, with `font-display: swap`. No remote font download is needed. The font files come from the [official Inter release](https://github.com/rsms/inter/tree/v4.1/docs/font-files), with their SIL Open Font License in `public/fonts/Inter-LICENSE.txt`.
 
 Choose the Nitro preset for your Cloudflare deployment: `cloudflare_module` for Workers, or `cloudflare_pages` for Pages. Configure `www.xavhm.foo` as the production custom domain, and redirect `xavhm.foo` to `https://www.xavhm.foo` to keep one canonical origin. After deployment, verify `/robots.txt` and `/sitemap.xml` on the live domain and submit the sitemap in Google Search Console.
 
@@ -98,3 +100,5 @@ Configuration follows the [Nuxt SEO setup guide](https://nuxtseo.com/docs/nuxt-s
 ## License
 
 Released under the [MIT License](./LICENSE).
+
+The alien monster favicon uses [Twemoji artwork](https://github.com/jdecked/twemoji/blob/main/assets/svg/1f47e.svg), copyright X Corp. and other contributors, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

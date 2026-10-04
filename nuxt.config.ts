@@ -3,7 +3,36 @@ import { portfolioSeo } from './app/data/seo'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/ui', '@nuxt/image', '@nuxt/hints', '@nuxtjs/seo', 'nuxt-security'],
+  modules: [
+    '@nuxt/fonts',
+    '@nuxt/ui',
+    '@nuxt/image',
+    '@nuxt/hints',
+    '@nuxtjs/seo',
+    'nuxt-security',
+  ],
+
+  fonts: {
+    families: [
+      {
+        name: 'Inter',
+        src: '/fonts/InterVariable.woff2',
+        weight: [100, 900],
+        style: 'normal',
+        display: 'swap',
+        global: true,
+      },
+      {
+        name: 'Inter',
+        src: '/fonts/InterVariable-Italic.woff2',
+        weight: [100, 900],
+        style: 'italic',
+        display: 'swap',
+        global: true,
+        preload: false,
+      },
+    ],
+  },
 
   devtools: {
     enabled: true,

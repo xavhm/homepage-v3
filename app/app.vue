@@ -13,16 +13,17 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-// A shared placeholder for all pages. Replace this template when the final design is ready.
+// A shared portfolio image for all pages.
 // Nuxt SEO generates absolute OG/Twitter image URLs and each page's canonical og:url.
 defineOgImage(
   'Portfolio.takumi',
   {
-    name: portfolioSeo.name,
+    name: 'Xavier Hernandez',
     title: portfolioSeo.role,
+    image: portfolioSeo.image,
   },
   {
-    alt: `${portfolioSeo.name} — ${portfolioSeo.role}`,
+    alt: `Xavier Hernandez — ${portfolioSeo.role}`,
   },
 )
 

@@ -6,7 +6,11 @@
   --color-muted: #69696d;
   --color-line: #ebebed;
   --color-surface: #f6f6f8;
-  --font-sans: 'Inter Display', Inter, 'Helvetica Neue', Arial, sans-serif;
+  --font-sans: Inter, sans-serif;
+}
+
+html {
+  font-size-adjust: from-font;
 }
 
 .site-layout {
