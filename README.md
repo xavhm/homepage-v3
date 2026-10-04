@@ -83,22 +83,21 @@ The generated Nuxt output is written to `.output/`. Refer to the [Nuxt deploymen
 
 ### SEO and Cloudflare
 
-The canonical production URL is `https://www.xavhm.foo`. Override it with `NUXT_SITE_URL` when needed; `.env.example` documents the build variables. Set `NUXT_SITE_ENV=staging` **before building** Cloudflare preview deployments so their prerendered HTML and robots file disable indexing. Production builds use `NUXT_SITE_ENV=production` (the default).
+#### Deploy only after CI passes
 
-Nuxt SEO generates `/robots.txt`, `/sitemap.xml`, canonical URLs, social metadata, and Schema.org JSON-LD. The sitemap includes the homepage and every project in `app/data/projects.ts`. All these pages are prerendered explicitly. The sitemap and OG images use zero runtime mode and are regenerated when you build; rebuild after changing projects or SEO content.
+To activate this workflow:
 
-Shared portfolio metadata lives in `app/data/seo.ts`; case studies use their own titles and descriptions. The homepage is a `ProfilePage` linked to the site-wide `Person` identity, including the portrait and existing social profiles.
+1. Create a Cloudflare API token using the **Edit Cloudflare Workers** template, scoped to the account hosting `homepage-v3`.
+2. In GitHub, go to **Settings → Secrets and variables → Actions** and add repository secrets named `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
+3. In Cloudflare, open **Workers & Pages → homepage-v3 → Settings → Builds** and select **Disconnect** to stop the independent Git-triggered builds. Otherwise Cloudflare will continue deploying independently of the GitHub checks.
+4. Push the workflow change to the default branch and confirm that **Deploy to Cloudflare** runs only after the preceding CI steps succeed.
 
-The shared 1200 × 630 PNG image is generated from `app/components/OgImage/Portfolio.takumi.vue` and registered in `app/app.vue`. Edit that template to change the design. The Takumi native renderer runs during the build, and generated images are served as static assets on Cloudflare.
+See Cloudflare's [GitHub Actions deployment guide](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/) and [disconnecting builds instructions](https://developers.cloudflare.com/workers/ci-cd/builds/#disconnecting-builds) for token setup and disabling builds. Existing deployments continue to be served when automatic builds are disabled.
 
-The site and OG image use self-hosted Inter 4.1 variable fonts from `public/fonts/`, including normal and italic weights from 100 to 900. `@nuxt/fonts` registers both local files globally so the browser and Takumi renderer use the same assets, with `font-display: swap`. No remote font download is needed. The font files come from the [official Inter release](https://github.com/rsms/inter/tree/v4.1/docs/font-files), with their SIL Open Font License in `public/fonts/Inter-LICENSE.txt`.
-
-Choose the Nitro preset for your Cloudflare deployment: `cloudflare_module` for Workers, or `cloudflare_pages` for Pages. Configure `www.xavhm.foo` as the production custom domain, and redirect `xavhm.foo` to `https://www.xavhm.foo` to keep one canonical origin. After deployment, verify `/robots.txt` and `/sitemap.xml` on the live domain and submit the sitemap in Google Search Console.
+The canonical production URL is overwritten with `NUXT_SITE_URL` when needed; `.env.example` documents the build variables. Set `NUXT_SITE_ENV=staging` **before building** Cloudflare preview deployments so their prerendered HTML and robots file disable indexing. Production builds use `NUXT_SITE_ENV=production` (the default).
 
 Configuration follows the [Nuxt SEO setup guide](https://nuxtseo.com/docs/nuxt-seo/guides/using-the-modules), [OG image zero runtime guidance](https://nuxtseo.com/docs/og-image/guides/zero-runtime), and [identity setup guidance](https://nuxtseo.com/docs/schema-org/guides/setup-identity).
 
 ## License
 
 Released under the [MIT License](./LICENSE).
-
-The alien monster favicon uses [Twemoji artwork](https://github.com/jdecked/twemoji/blob/main/assets/svg/1f47e.svg), copyright X Corp. and other contributors, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
