@@ -54,7 +54,7 @@ const technologies = [
         densities="x1 x2"
       />
       <div>
-        <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Xavier Hernandez-Martinez</p>
+        <p class="mb-0.75 text-[17px] font-medium tracking-[-0.04em]">Xavier Hernandez</p>
         <div class="text-muted flex items-center gap-2 text-sm">
           <p class="sr-only">{{ roles.join(', ') }}</p>
           <p aria-hidden="true" class="motion-safe:hidden">{{ roles[0] }}</p>
