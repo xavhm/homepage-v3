@@ -2,11 +2,56 @@
 @import '@nuxt/ui';
 
 @theme {
-  --color-ink: #151517;
-  --color-muted: #69696d;
-  --color-line: #ebebed;
-  --color-surface: #f6f6f8;
   --font-sans: Inter, sans-serif;
+}
+
+/* Nuxt UI semantic tokens: components reuse these in either color mode. */
+:root {
+  color-scheme: light dark;
+  --ui-text: #151517;
+  --ui-text-highlighted: #151517;
+  --ui-text-muted: #69696d;
+  --ui-text-toned: #5e5e62;
+  --ui-text-dimmed: #dedee0;
+  --ui-text-inverted: #fff;
+  --ui-bg: #fff;
+  --ui-bg-muted: #f6f6f8;
+  --ui-bg-elevated: #fff;
+  --ui-bg-accented: #ddd;
+  --ui-bg-inverted: #101013;
+  --ui-border: #ebebed;
+  --ui-border-muted: #ebebed;
+  --portfolio-action-hover: #343438;
+  --portfolio-status-bg: #ebf9e7;
+  --portfolio-status-text: #3f6c38;
+  --portfolio-status-dot: #51af3e;
+  --portfolio-header-bg: #f5f5f7;
+  --portfolio-header-glass: rgb(245 245 247 / 65%);
+  --portfolio-fade-rgb: 255 255 255;
+}
+
+/* @nuxtjs/color-mode adds this class to <html> for a dark system theme. */
+:root.dark {
+  --ui-text: #f4f4f5;
+  --ui-text-highlighted: #f4f4f5;
+  --ui-text-muted: #a1a1aa;
+  --ui-text-toned: #b8b8c0;
+  --ui-text-dimmed: #71717a;
+  --ui-text-inverted: #18181b;
+  --ui-bg: #151517;
+  --ui-bg-muted: #1e1e22;
+  --ui-bg-elevated: #27272c;
+  --ui-bg-accented: #343438;
+  --ui-bg-inverted: #f4f4f5;
+  --ui-border: #343438;
+  --ui-border-muted: #343438;
+  --portfolio-action-hover: #d4d4d8;
+  --portfolio-status-bg: #20351f;
+  --portfolio-status-text: #b4dfa6;
+  --portfolio-status-dot: #80cf6c;
+  --portfolio-header-bg: #242428;
+  --portfolio-header-glass: rgb(36 36 40 / 65%);
+  --portfolio-fade-rgb: 21 21 23;
 }
 
 html {
@@ -27,21 +72,21 @@ html {
   pointer-events: none;
   background: linear-gradient(
     to bottom,
-    white var(--header-offset),
-    rgb(255 255 255 / 65%) calc(var(--header-offset) + 1rem),
-    rgb(255 255 255 / 25%) calc(var(--header-offset) + 4rem),
-    rgb(255 255 255 / 0%) 100%
+    rgb(var(--portfolio-fade-rgb)) var(--header-offset),
+    rgb(var(--portfolio-fade-rgb) / 65%) calc(var(--header-offset) + 1rem),
+    rgb(var(--portfolio-fade-rgb) / 25%) calc(var(--header-offset) + 4rem),
+    rgb(var(--portfolio-fade-rgb) / 0%) 100%
   );
 }
 
 .site-header {
   top: var(--header-offset);
-  background: #f5f5f7;
+  background: var(--portfolio-header-bg);
 }
 
 @supports (backdrop-filter: blur(16px)) or (-webkit-backdrop-filter: blur(16px)) {
   .site-header {
-    background: rgb(245 245 247 / 65%);
+    background: var(--portfolio-header-glass);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
   }

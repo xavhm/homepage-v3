@@ -15,7 +15,7 @@ function formatDate(date: string) {
 <template>
   <section
     id="work"
-    class="border-line bg-default scroll-mt-24 overflow-clip rounded-[20px] border px-6 py-9 sm:px-9.75 sm:py-12"
+    class="border-default bg-elevated scroll-mt-24 overflow-clip rounded-[20px] border px-6 py-9 sm:px-9.75 sm:py-12"
   >
     <SectionHeading
       title="Experience"
@@ -33,12 +33,12 @@ function formatDate(date: string) {
           >
             <span
               aria-hidden="true"
-              class="border-line absolute top-1.5 left-0 border-l"
+              class="border-default absolute top-1.5 left-0 border-l"
               :class="entryIndex === group.entries.length - 1 ? 'bottom-0' : '-bottom-7'"
             />
             <span
               aria-hidden="true"
-              class="bg-default border-muted absolute top-1.5 -left-0.75 size-1.75 rounded-full border"
+              class="bg-elevated border-muted absolute top-1.5 -left-0.75 size-1.75 rounded-full border"
             />
             <p class="text-muted text-xs leading-5">
               <time :datetime="entry.startDate">{{ formatDate(entry.startDate) }}</time>
@@ -50,12 +50,12 @@ function formatDate(date: string) {
             </p>
             <div class="min-w-0">
               <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
-                <h4 class="text-ink text-base leading-5 font-medium tracking-[-0.04em]">
+                <h4 class="text-highlighted text-base leading-5 font-medium tracking-[-0.04em]">
                   {{ entry.organization }}
                 </h4>
                 <span
                   v-if="entry.endDate === 'Present'"
-                  class="bg-surface text-muted rounded-full px-2 py-0.5 text-[0.6875rem]"
+                  class="bg-muted text-muted rounded-full px-2 py-0.5 text-[0.6875rem]"
                   >Current</span
                 >
               </div>

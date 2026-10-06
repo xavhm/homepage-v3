@@ -21,7 +21,7 @@ useSeoMeta({
 <template>
   <article
     v-if="project"
-    class="overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-5 pt-7 pb-9 sm:px-7.75 sm:pt-11.5 sm:pb-12.5"
+    class="border-default bg-elevated overflow-clip rounded-[20px] border px-5 pt-7 pb-9 sm:px-7.75 sm:pt-11.5 sm:pb-12.5"
   >
     <div class="text-muted flex flex-wrap gap-2.75 text-xs">
       <span>{{ project.category }}</span>
@@ -82,7 +82,7 @@ useSeoMeta({
       <p class="text-muted max-w-150 text-sm leading-[1.65]">{{ project.contributionText }}</p>
     </div>
     <NuxtLink
-      class="border-line text-ink focus-visible:outline-ink mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="border-default text-highlighted focus-visible:outline-inverted bg-elevated dark:border-inverted mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-[11px] border px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
       to="/#projects"
       ><UIcon name="i-lucide-arrow-left" /> Back to projects</NuxtLink
     >

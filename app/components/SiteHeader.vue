@@ -46,13 +46,13 @@ onUnmounted(() => {
         v-for="item in nav"
         :key="item.label"
         :to="item.to"
-        class="focus-visible:outline-ink flex min-h-11 shrink-0 items-center px-1.5 transition-opacity hover:opacity-50 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 min-[741px]:px-0"
+        class="focus-visible:outline-inverted flex min-h-11 shrink-0 items-center px-1.5 transition-opacity hover:opacity-50 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 min-[741px]:px-0"
         >{{ item.label }}</NuxtLink
       >
     </nav>
     <div class="hidden gap-2 min-[741px]:flex" role="group" aria-label="Social links">
       <!-- <a
-        class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="focus-visible:outline-inverted grid size-7.75 place-items-center rounded-[9px] bg-elevated text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://x.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -60,7 +60,7 @@ onUnmounted(() => {
         ><UIcon name="i-simple-icons-x"
       /></a> -->
       <a
-        class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="focus-visible:outline-inverted bg-elevated grid size-7.75 place-items-center rounded-[9px] text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://linkedin.com/in/xavhm"
         target="_blank"
         rel="noopener noreferrer"
@@ -68,7 +68,7 @@ onUnmounted(() => {
         ><UIcon name="i-simple-icons-linkedin"
       /></a>
       <a
-        class="focus-visible:outline-ink grid size-7.75 place-items-center rounded-[9px] bg-white text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="focus-visible:outline-inverted bg-elevated grid size-7.75 place-items-center rounded-[9px] text-[15px] shadow-sm transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="https://github.com/xavhm"
         target="_blank"
         rel="noopener noreferrer"

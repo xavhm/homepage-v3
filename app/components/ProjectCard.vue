@@ -5,11 +5,11 @@ defineProps<{ project: PortfolioProject }>()
 
 <template>
   <NuxtLink
-    class="group focus-visible:outline-ink block min-w-0 focus-visible:rounded-[15px] focus-visible:outline-2 focus-visible:outline-offset-4"
+    class="group focus-visible:outline-inverted block min-w-0 focus-visible:rounded-[15px] focus-visible:outline-2 focus-visible:outline-offset-4"
     :to="`/projects/${project.slug}`"
     :aria-label="project.cardLabel"
   >
-    <div class="aspect-[1.325] overflow-clip rounded-[15px] bg-[#ddd] max-sm:aspect-[1.33]">
+    <div class="bg-accented aspect-[1.325] overflow-clip rounded-[15px] max-sm:aspect-[1.33]">
       <NuxtPicture
         format="avif,webp"
         class="block size-full"

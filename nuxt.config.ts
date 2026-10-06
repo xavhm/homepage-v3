@@ -80,11 +80,19 @@ export default defineNuxtConfig({
     },
   },
 
+  // Follow the visitor's OS theme; Nuxt UI registers the color-mode module.
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+  },
+
   css: ['~/assets/css/main.css'],
 
   app: {
     head: {
       titleTemplate: '%s',
+      meta: [{ name: 'color-scheme', content: 'light dark' }],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     },
   },

@@ -33,7 +33,7 @@ onUnmounted(() => clearTimeout(resetTimer))
       type="button"
       :aria-label="copyLabel"
       :disabled="copying"
-      class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-grid cursor-pointer place-items-center overflow-hidden rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait motion-reduce:transition-none"
+      class="bg-muted text-muted focus-visible:outline-inverted hover:bg-accented inline-grid cursor-pointer place-items-center overflow-hidden rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-wait motion-reduce:transition-none"
       @click="copy"
     >
       <span

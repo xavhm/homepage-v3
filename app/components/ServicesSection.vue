@@ -26,7 +26,7 @@ const expertise = [
 <template>
   <section
     id="services"
-    class="border-surface bg-surface scroll-mt-22.75 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
+    class="bg-muted scroll-mt-22.75 overflow-clip rounded-[20px] px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
   >
     <SectionHeading
       title="What I bring to a team"
@@ -36,9 +36,9 @@ const expertise = [
       <li
         v-for="area in expertise"
         :key="area.number"
-        class="flex min-h-40 flex-col justify-between rounded-[17px] bg-white p-5.5 sm:min-h-50 md:min-h-58.25 md:p-7.75"
+        class="bg-elevated flex min-h-40 flex-col justify-between rounded-[17px] p-5.5 sm:min-h-50 md:min-h-58.25 md:p-7.75"
       >
-        <span class="text-[28px] tracking-tighter text-[#dedee0]">{{ area.number }}</span>
+        <span class="text-dimmed text-[28px] tracking-tighter">{{ area.number }}</span>
         <div>
           <h3 class="mb-3.5 max-w-61.25 text-lg leading-[1.2] font-medium tracking-[-0.045em]">
             {{ area.title }}

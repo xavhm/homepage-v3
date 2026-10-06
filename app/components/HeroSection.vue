@@ -31,13 +31,13 @@ const technologies = [
 <template>
   <section
     id="hero"
-    class="border-surface relative scroll-mt-20.75 overflow-clip rounded-[20px] border-2 bg-white px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
+    class="border-muted bg-elevated relative scroll-mt-20.75 overflow-clip rounded-[20px] border px-6 pt-14.5 pb-7.5 sm:min-h-126.5 sm:px-10.5 sm:pt-10 sm:pb-10.75"
   >
     <div
-      class="mb-6 flex w-fit max-w-full items-center gap-2 rounded-2xl bg-[#ebf9e7] px-3 py-1.75 text-xs leading-relaxed text-[#3f6c38] sm:mb-0 sm:ml-auto sm:rounded-full"
+      class="mb-6 flex w-fit max-w-full items-center gap-2 rounded-2xl bg-(--portfolio-status-bg) px-3 py-1.75 text-xs leading-relaxed text-(--portfolio-status-text) sm:mb-0 sm:ml-auto sm:rounded-full"
     >
       <span
-        class="size-1.75 shrink-0 rounded-full bg-[#51af3e] motion-safe:animate-pulse"
+        class="size-1.75 shrink-0 rounded-full bg-(--portfolio-status-dot) motion-safe:animate-pulse"
         aria-hidden="true"
       />Open to new opportunities
     </div>
@@ -76,19 +76,19 @@ const technologies = [
       I build digital experiences with engineering depth and product judgment.
       <span class="inline-block rotate-12">👾</span>
     </h1>
-    <p class="max-w-137.5 text-sm leading-[1.65] tracking-tight text-[#5e5e62] sm:text-[15px]">
+    <p class="text-toned max-w-137.5 text-sm leading-[1.65] tracking-tight sm:text-[15px]">
       I lead frontend architecture and delivery for production applications. Before engineering, I
       spent ten years in product operations, helping me connect technical decisions to user needs
       and business constraints.
     </p>
     <div class="mt-6.5 flex flex-wrap gap-2.5">
       <a
-        class="focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border border-transparent bg-[#101013] px-4.75 text-[13px] font-medium whitespace-nowrap text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-[#343438] focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="focus-visible:outline-inverted bg-inverted text-inverted inline-flex min-h-11 items-center justify-center rounded-[11px] border border-transparent px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-all hover:-translate-y-0.5 hover:bg-(--portfolio-action-hover) focus-visible:outline-2 focus-visible:outline-offset-2"
         href="#contact"
         >Get in touch</a
       >
       <a
-        class="border-line text-ink focus-visible:outline-ink inline-flex min-h-11 items-center justify-center rounded-[11px] border bg-white px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="border-default dark:border-inverted text-highlighted focus-visible:outline-inverted bg-elevated inline-flex min-h-11 items-center justify-center rounded-[11px] border px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2"
         href="#projects"
         >Explore my work</a
       >
@@ -102,9 +102,9 @@ const technologies = [
         :repeat="2"
         pause-on-hover
         aria-hidden="true"
-        class="text-ink py-2 [--duration:45s] [--gap:--spacing(5)] motion-reduce:overflow-x-auto sm:[--gap:--spacing(6)]"
+        class="text-highlighted py-2 [--duration:45s] [--gap:--spacing(5)] motion-reduce:overflow-x-auto sm:[--gap:--spacing(6)]"
         :ui="{
-          root: 'before:w-8 before:from-white after:w-8 after:from-white motion-reduce:before:hidden motion-reduce:after:hidden',
+          root: 'before:w-8 before:from-elevated after:w-8 after:from-elevated motion-reduce:before:hidden motion-reduce:after:hidden',
           content: 'motion-reduce:[&:not(:first-child)]:hidden',
         }"
       >

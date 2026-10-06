@@ -15,11 +15,11 @@ watch(
   <NuxtAnnouncer />
   <NuxtRouteAnnouncer />
   <div
-    class="site-layout text-ink mx-auto w-[calc(100%-20px)] max-w-181 font-sans text-sm tracking-tight scheme-light md:w-[calc(100%-32px)]"
+    class="site-layout text-highlighted mx-auto w-[calc(100%-20px)] max-w-181 font-sans text-sm tracking-tight md:w-[calc(100%-32px)]"
   >
     <a
       href="#main-content"
-      class="bg-ink focus-visible:outline-ink sr-only fixed top-3 left-3 z-60 rounded-lg px-4 py-3 font-medium text-white focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2"
+      class="bg-inverted focus-visible:outline-inverted text-inverted sr-only fixed top-3 left-3 z-60 rounded-lg px-4 py-3 font-medium focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2"
       >Skip to main content</a
     >
     <div class="site-header-fade" aria-hidden="true" />

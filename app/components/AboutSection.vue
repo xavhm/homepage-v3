@@ -1,11 +1,11 @@
 <template>
   <section
     id="about"
-    class="scroll-mt-22.75 overflow-clip rounded-[20px] border border-[#ededf0] bg-white px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
+    class="border-default bg-elevated scroll-mt-22.75 overflow-clip rounded-[20px] border px-6 py-9 sm:px-9.75 sm:pt-12 sm:pb-10.5"
   >
     <h2 class="text-muted mb-5.5 text-sm font-normal">About</h2>
     <p class="text-muted max-w-152.5 text-base leading-[1.48] tracking-[-0.04em]">
-      <strong class="text-ink font-medium"
+      <strong class="text-highlighted font-medium"
         >I’m Xavier, a frontend engineer and technical owner based in La Rochelle.</strong
       >
       At Raccourci Agency, I design frontend architecture and build TypeScript and Vue.js
@@ -32,7 +32,7 @@
         copy-label="Copy phone number"
       />
       <a
-        class="bg-surface text-muted focus-visible:outline-ink hover:bg-line inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
+        class="bg-muted text-muted focus-visible:outline-inverted hover:bg-accented inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[0.8125rem] transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none"
         href="/xavier-hernandez-frontend-eng-resume.pdf"
         target="_blank"
         rel="noopener noreferrer"

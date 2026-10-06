@@ -21,7 +21,7 @@ const faqs = [
 <template>
   <section
     id="faq"
-    class="border-surface bg-surface scroll-mt-24 overflow-clip rounded-[20px] border px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
+    class="bg-muted scroll-mt-24 overflow-clip rounded-[20px] px-5 pt-8.5 pb-6 sm:px-7.75 sm:pt-10.5 sm:pb-8"
   >
     <SectionHeading title="A few useful details" />
     <div class="grid gap-2">
@@ -29,11 +29,11 @@ const faqs = [
         v-for="(faq, index) in faqs"
         :key="faq.question"
         name="faq"
-        class="faq-item group rounded-xl bg-white px-5"
+        class="faq-item group bg-elevated rounded-xl px-5"
         :open="index === 0"
       >
         <summary
-          class="focus-visible:outline-ink flex min-h-14 cursor-pointer list-none items-center justify-between gap-5 rounded-sm text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden"
+          class="focus-visible:outline-inverted flex min-h-14 cursor-pointer list-none items-center justify-between gap-5 rounded-sm text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden"
         >
           {{ faq.question
           }}<UIcon
