@@ -33,15 +33,16 @@ useSeoMeta({
     </h1>
     <p class="text-muted max-w-150 text-[13px] leading-[1.6]">{{ project.description }}</p>
     <NuxtPicture
+      :data-project-cover="project.key"
       format="avif,webp"
       class="mt-10 block w-full"
       :img-attrs="{
         class: 'aspect-[1.5] w-full rounded-[0.9375rem] object-cover',
-        style: { viewTransitionName: `project-${project.key}` },
         fetchpriority: 'high',
       }"
       :src="project.cover"
       :alt="project.title"
+      loading="eager"
       width="1800"
       height="1348"
       sizes="320:100vw 480:100vw 639:100vw sm:662px"

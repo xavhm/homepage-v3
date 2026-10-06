@@ -5,7 +5,7 @@ import { HeroSection, ProjectCard } from '#components'
 import { projects } from '~/data/projects'
 
 describe('Portfolio pictures', () => {
-  it('offers usable mobile sources and keeps the project transition on the image', async () => {
+  it('offers usable mobile sources and identifies the project cover', async () => {
     const project = projects[0]!
     const wrapper = await mountSuspended(ProjectCard, { props: { project } })
     const picture = wrapper.get('picture')
@@ -25,7 +25,8 @@ describe('Portfolio pictures', () => {
     }
     expect(image.attributes('src')).toContain('f_jpeg')
     expect(image.attributes('loading')).toBe('lazy')
-    expect(image.element.style.viewTransitionName).toBe(`project-${project.key}`)
+    expect(picture.attributes('data-project-cover')).toBe(project.key)
+    expect(image.element.style.viewTransitionName).toBe('')
     expect(picture.attributes('style')).toBeUndefined()
     wrapper.unmount()
   })

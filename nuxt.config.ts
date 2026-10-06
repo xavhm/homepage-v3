@@ -97,10 +97,6 @@ export default defineNuxtConfig({
     },
   },
 
-  experimental: {
-    viewTransition: true,
-  },
-
   routeRules: {
     '/': { prerender: true },
   },

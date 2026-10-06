@@ -92,20 +92,33 @@ html {
   }
 }
 
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.28s;
+/* Swap the page immediately; only the selected cover moves. */
+::view-transition-old(root) {
+  display: none;
 }
 
-::view-transition-group(*) {
-  animation-duration: 0.55s;
-  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+::view-transition-group(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-group(project-cover) {
+  animation-duration: 220ms;
+  animation-timing-function: ease-out;
+}
+
+::view-transition-old(project-cover),
+::view-transition-new(project-cover) {
+  height: 100%;
+  object-fit: cover;
+  animation-duration: 220ms;
+  animation-timing-function: ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(root),
-  ::view-transition-new(root),
-  ::view-transition-group(*) {
-    animation-duration: 0.01ms;
+  ::view-transition-group(project-cover),
+  ::view-transition-old(project-cover),
+  ::view-transition-new(project-cover) {
+    animation: none;
   }
 }

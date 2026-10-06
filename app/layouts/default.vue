@@ -4,9 +4,9 @@ const route = useRoute()
 watch(
   () => route.path,
   async (path, previousPath) => {
-    if (path === previousPath || route.hash) return
+    if (path === previousPath) return
     await nextTick()
-    document.getElementById('main-content')?.focus()
+    document.getElementById('main-content')?.focus({ preventScroll: true })
   },
 )
 </script>
