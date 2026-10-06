@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'Where are you based?',
     answer:
-      'I’m based in La Rochelle, France, and open to remote or hybrid opportunities in France and the EU, including English-speaking teams.',
+      'I’m based in La Rochelle, France, and open to remote or relocated opportunities in France and the EU, including English-speaking teams.',
   },
   {
     question: 'What is your main technical focus?',

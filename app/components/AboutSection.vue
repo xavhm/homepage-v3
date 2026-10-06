@@ -13,10 +13,11 @@
       performance, testing, API contracts, and product decision-making.
     </p>
     <p class="text-muted mt-5 max-w-152.5 text-base leading-relaxed">
-      During my decade at Winamax, I learned to balance user behavior, operational constraints, and
-      commercial outcomes with technical quality. I’m drawn to roles where I can help shape both the
-      product and its technical direction, particularly around AI-powered experiences. Alongside
-      AI-assisted engineering, I’m continuing to deepen my expertise in agentic systems and UX.
+      During my previous product career, I learned to balance user behavior, operational
+      constraints, and commercial outcomes with technical quality. I’m drawn to roles where I can
+      help shape both the product and its technical direction, particularly around AI-powered
+      experiences. Alongside AI-assisted engineering, I’m continuing to deepen my expertise in
+      agentic systems and UX.
     </p>
     <div class="mt-7.25 flex flex-wrap items-center gap-2.5">
       <CopyButton

@@ -8,7 +8,7 @@ const expertise = [
   {
     number: '02',
     title: 'Product engineering',
-    detail: 'Business workflows, prioritization, API contracts, technical trade-offs',
+    detail: 'Business workflows, backlog prioritization and technical trade-offs',
   },
   {
     number: '03',
