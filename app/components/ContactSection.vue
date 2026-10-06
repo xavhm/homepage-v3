@@ -63,8 +63,9 @@ function sendMessage() {
         />
       </div>
       <button
-        class="focus-visible:outline-inverted bg-inverted text-inverted inline-flex min-h-11 w-fit items-center justify-center gap-2 rounded-[11px] border border-transparent px-4.75 text-[13px] font-medium whitespace-nowrap shadow-md transition-all hover:-translate-y-0.5 hover:bg-(--portfolio-action-hover) focus-visible:outline-2 focus-visible:outline-offset-2"
+        class="focus-visible:outline-inverted bg-inverted text-inverted pointer-events-none inline-flex min-h-11 w-fit items-center justify-center gap-2 rounded-[11px] border border-transparent px-4.75 text-[13px] font-medium whitespace-nowrap opacity-70 shadow-md transition-all hover:-translate-y-0.5 hover:bg-(--portfolio-action-hover) focus-visible:outline-2 focus-visible:outline-offset-2"
         type="submit"
+        disabled="true"
       >
         Send Message <UIcon name="i-lucide-arrow-up-right" />
       </button>
